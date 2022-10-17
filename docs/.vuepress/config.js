@@ -18,7 +18,7 @@ module.exports = {
         search: false,
         navbar: false,
         nav: [
-            {text:'HOMEPAGE', link: '/', target: '_self'},
+            {text:'HOME', link: '/', target: '_self'},
             {text:'PRODUCT', link: '/product', target:'_self'},
             {text:'BLOG', link: '/news', target:'_self'},
             {text:'ABOUT US', link: '/aboutus', target:'_self'},
