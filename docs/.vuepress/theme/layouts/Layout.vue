@@ -7,8 +7,6 @@
             <div class="main_content_wrapper">
                 <Home v-if="$page.frontmatter.home"></Home>
                 <NewHome v-if="$page.frontmatter.isNewHome"></NewHome>
-                <Developer v-if="$page.frontmatter.isDeveloper"></Developer>
-                <Community v-if="$page.frontmatter.isCommunity" />
                 <Product v-if="$page.frontmatter.isProduct" />
                 <Article v-if="$page.frontmatter.isArticle" />
                 <Faq v-if="$page.frontmatter.isFaq" />
@@ -28,8 +26,6 @@
 import Navigation from "@theme/components/Navigation.vue";
 import Footer from "@theme/components/Footer.vue";
 import NewHome from "@theme/components/NewHome.vue";
-import Developer from "../components/Developer";
-import Community from "../components/Community";
 import Product from "../components/Product";
 import Article from "../components/Article";
 import Faq from "../components/Faq";
@@ -51,8 +47,6 @@ export default {
         Navigation,
         Footer,
         NewHome,
-        Developer,
-        Community,
         Product,
         Article,
         Faq,

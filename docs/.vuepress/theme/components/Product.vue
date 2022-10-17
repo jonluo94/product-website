@@ -35,9 +35,6 @@
                             </div>
 
                         </div>
-                        <span class="community_bottom_content_item_detail">
-                            产品详情
-                        </span>
                     </div>
 
                 </div>
