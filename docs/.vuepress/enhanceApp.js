@@ -24,10 +24,13 @@ export default async ({
 	Vue.mixin({ store: store });
 	if(!isServer){
 		router.beforeEach((to, from,next) => {
-			if(to.path.includes('/blog') || to.path.includes('/article') || to.path.includes('/community')){
-				store.commit('currentIndex',3)
-				localStorage.setItem('currentIndex',3)
-			}else if (to.path.includes('/developer')){
+			if(to.path.includes('/product')) {
+				store.commit('currentIndex',1)
+				localStorage.setItem('currentIndex',1)
+			}else if (to.path.includes('/news')){
+				store.commit('currentIndex',2)
+				localStorage.setItem('currentIndex',2)
+			}else if (to.path.includes('/faq')){
 				store.commit('currentIndex',4)
 				localStorage.setItem('currentIndex',4)
 			}else {

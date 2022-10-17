@@ -9,6 +9,10 @@
                 <NewHome v-if="$page.frontmatter.isNewHome"></NewHome>
                 <Developer v-if="$page.frontmatter.isDeveloper"></Developer>
                 <Community v-if="$page.frontmatter.isCommunity" />
+                <Product v-if="$page.frontmatter.isProduct" />
+                <Article v-if="$page.frontmatter.isArticle" />
+                <Faq v-if="$page.frontmatter.isFaq" />
+                <Aboutus v-if="$page.frontmatter.isAboutus" />
                 <div class="md_container" v-if="showMd">
                     <div class="md_wrap">
                         <Content></Content>
@@ -26,6 +30,10 @@ import Footer from "@theme/components/Footer.vue";
 import NewHome from "@theme/components/NewHome.vue";
 import Developer from "../components/Developer";
 import Community from "../components/Community";
+import Product from "../components/Product";
+import Article from "../components/Article";
+import Faq from "../components/Faq";
+import Aboutus from "../components/Aboutus";
 const nav = require("../../config.js");
 import cfg from "../../config.json";
 
@@ -45,6 +53,10 @@ export default {
         NewHome,
         Developer,
         Community,
+        Product,
+        Article,
+        Faq,
+        Aboutus,
     },
     watch: {
         $route: {

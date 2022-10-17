@@ -18,26 +18,29 @@
                     <div class="content_right">
                         <div class="line"></div>
                         <div class="contact">
-                            <span class="contact_title">联系我们</span>
-                            <span class="email">contact@bianjie.ai</span>
-                            <a
-                                class="official"
-                                href="https://www.bianjie.ai"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >www.bianjie.ai</a
-                            >
+                            <span class="contact_title">Contacts</span>
+                            <span class="email">xxxx@gmail.com</span>
                         </div>
                         <div class="focus">
-                            <span class="focus_title">关注我们</span>
-                            <span class="qr_code">
-                                <img
-                                    src="/qrcode.png"
-                                    alt=""
-                                    class="qr_code_img"
-                                />
-                            </span>
-                            <span class="desc">微信公众号 边界智能</span>
+                            <span class="focus_title">Follow Us</span>
+                          <div>
+                            <a href="https://www.facebook.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                              <LogosFacebook style="font-size: 4.0rem;"/>
+                            </a>
+                            <a href="https://twitter.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                              <LogosTwitter style="font-size: 4.0rem;"/>
+                            </a>
+                            <a href="https://www.linkedin.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                              <LogosLinkedinIcon style="font-size: 4.0rem;"/>
+                            </a>
+                          </div>
+
                         </div>
                     </div>
                 </div>
@@ -45,31 +48,30 @@
         </div>
         <div class="footer_content_bottom">
             <div class="bottom_content">
-                <span class="copyright_content">{{
-                    `版权所有©2016-${new Date().getFullYear()} 上海边界智能科技有限公司`
-                }}</span>
-                <a
-                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    >沪ICP备17020986号</a
-                >
-                <span class="police_content">
-                    <a
-                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502009028"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        >沪公网安备31011502009028号</a
-                    >
-                </span>
+              <span class="police_content"></span>
+              <span class="copyright_content">{{`Copyright ©2022-${new Date().getFullYear()} XX company` }}</span>
+              <span class="police_content"></span>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import LogosFacebook from "../global-components/LogosFacebook";
+import LogosTwitter from "../global-components/LogosTwitter";
+import LogosLinkedinIcon from "../global-components/LogosLinkedinIcon";
 export default {
-    name: "Footer",
+  name: "Footer",
+  data() {
+    return {
+    };
+  },
+  components: {
+    LogosFacebook,
+    LogosTwitter,
+    LogosLinkedinIcon,
+  },
+
 };
 </script>
 

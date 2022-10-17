@@ -98,8 +98,8 @@
             date: 06,
             year: 2020,
             title: 边界智能开源联盟链产品线 IRITA ,
-            content: IRITA 是边界智能以区块链跨链、隐私计算及大数据分析技术创新为核心，自主研发的支持下一代分布式商业系统的企业级联盟链产品。, 
-            router: /article/article-004,
+            content: news-001, 
+            router: /news/news-001,
         }
     ]
 }

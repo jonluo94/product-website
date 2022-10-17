@@ -18,12 +18,11 @@ module.exports = {
         search: false,
         navbar: false,
         nav: [
-            {text:'关于 IRITA', link: '/', target: '_self'},
-            {text:'BSN 文昌链', link: 'https://wenchang.bianjie.ai/', target: '_blank'},
-            {text:'技术文档', link: 'https://irita.bianjie.ai/docs/', target: '_blank'},
-            {text:'开放社区', link: '/community', target:'_self'},
-            {text:'开发者',link:'/developer', target:'_self'},
-            {text:'关于边界',link:'https://www.bianjie.ai', target: '_blank'}
+            {text:'HOMEPAGE', link: '/', target: '_self'},
+            {text:'PRODUCT', link: '/product', target:'_self'},
+            {text:'BLOG', link: '/news', target:'_self'},
+            {text:'ABOUT US', link: '/aboutus', target:'_self'},
+            {text:'FAQ', link: '/faq', target:'_self'},
         ]
     },
     plugins: ['@vuepress/pwa', {
