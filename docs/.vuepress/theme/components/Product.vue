@@ -30,7 +30,7 @@
                                 </span>
                                 </div>
                                 <span class="community_bottom_content_item_time">
-                                {{ item.time }}
+                                {{ item.price }}
                             </span>
                             </div>
 
@@ -283,10 +283,10 @@ export default {
                         justify-content space-between;
 
                         .community_bottom_content_item_title {
-							width: 100%
+							              width: 100%
                             font-size: 18px;
                             font-weight: 600;
-                            color: #000000;
+                            color: #545454;
                             overflow: hidden;
                             text-overflow:ellipsis;
                             white-space: nowrap;
@@ -420,7 +420,7 @@ export default {
                             //align-items center;
                             font-size: 20px;
                             font-weight: 600;
-                            color: #000000;
+                            color: #545454;
                             word-break break-all;
                             margin-bottom 12px;
                             line-height:1.5;
