@@ -78,7 +78,7 @@
                  href="/product"
                  target="_self"
                  rel="noopener noreferrer">
-                <span class="more_text">了解更多</span>
+                <span class="more_text">More</span>
                 <i class="iconfont icon-turnto"></i>
               </a>
             </div>
