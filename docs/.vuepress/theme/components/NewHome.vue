@@ -34,23 +34,6 @@
                  ref="newWrapper"
                  :style="differentOpenImg(item.blogImgName)">
               <p class="title">{{ item.text }}</p>
-              <div class="more">
-                <a v-show="item.target === '_blank'"
-                   :href="item.link"
-                   :target="item.target"
-                   class="more_content">
-                  <span class="more_text">了解更多</span>
-                  <i class="iconfont icon-turnto"></i>
-                </a>
-                <router-link v-show="item.target === '_self'"
-                             @click.native="commitFn(item.routingLevel,index)"
-                             :to="item.link"
-                             replace
-                             class="more_content">
-                  <span class="more_text">了解更多</span>
-                  <i class="iconfont icon-turnto"></i>
-                </router-link>
-              </div>
             </div>
           </li>
         </ul>
@@ -1093,8 +1076,6 @@ export default {
         flex: 1;
         margin-right: 5%;
         height: 32rem;
-        border: 0.1rem solid $borderLineColor;
-        border-radius: 0.4rem;
 
         @media (max-width: 900px) {
           margin-right: 2%;
