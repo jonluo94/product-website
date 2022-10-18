@@ -3,7 +3,7 @@
     layout: Layout,
     isNewHome: true,
     homeContent: {
-        title: IRITA,
+        title: Xibo Bags,
         subTitle: 支持下一代分布式商业的企业级联盟链产品线,
     homeLink: [
     {
@@ -26,23 +26,23 @@
             link: /community,
             routingLevel: 2,
             target: _self,
-            blogImgName: techblog,
-            blogImgHighlightName: techblog_highlight
+blogImgName: bags1,
+blogImgHighlightName: bags2
         },
         {
             text: 文章资讯,
             link: /community,
             routingLevel: 2,
             target: _self,
-            blogImgName: news,
-            blogImgHighlightName: news_highlight
+blogImgName: bags1,
+blogImgHighlightName: bags2
         },
         {
             text: GitHub,
             link:  https://github.com/bianjieai/irita,
             target: _blank,
-            blogImgName: github,
-            blogImgHighlightName: github_highlight
+blogImgName: bags1,
+blogImgHighlightName: bags2
         }
     ]
     },
@@ -50,52 +50,52 @@
         text: Hot Products,
         list: [
         {
-            text: 技术博客,
+            text: Bags1,
+            link: /product/product-001,
+            routingLevel: 2,
+            target: _self,
+blogImgName: bags1,
+blogImgHighlightName: bags2
+        },
+        {
+            text: Bags1,
             link: /community,
             routingLevel: 2,
             target: _self,
-            blogImgName: techblog,
-            blogImgHighlightName: techblog_highlight
+blogImgName: bags1,
+blogImgHighlightName: bags2
         },
         {
-            text: 文章资讯,
-            link: /community,
-            routingLevel: 2,
-            target: _self,
-            blogImgName: news,
-            blogImgHighlightName: news_highlight
-        },
-        {
-            text: GitHub,
+            text: Bags1,
             link:  https://github.com/bianjieai/irita,
             target: _blank,
-            blogImgName: github,
-            blogImgHighlightName: github_highlight
+blogImgName: bags1,
+blogImgHighlightName: bags2
         }
         ],
         list2: [
         {
-            text: 技术博客,
+            text: Bags1,
             link: /faq/refund-policy,
             routingLevel: 2,
             target: _self,
-            blogImgName: techblog,
-            blogImgHighlightName: techblog_highlight
+blogImgName: bags1,
+blogImgHighlightName: bags2
         },
         {
-            text: 文章资讯,
+            text: Bags1,
             link: /community,
             routingLevel: 2,
             target: _self,
-            blogImgName: news,
-            blogImgHighlightName: news_highlight
+blogImgName: bags1,
+blogImgHighlightName: bags2
         },
         {
             text: GitHub,
             link:  https://github.com/bianjieai/irita,
             target: _blank,
-            blogImgName: github,
-            blogImgHighlightName: github_highlight
+blogImgName: bags1,
+blogImgHighlightName: bags2
         }
         ]
     }

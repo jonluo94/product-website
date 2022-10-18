@@ -123,7 +123,7 @@ export default {
     // 循环显示不同图片
     differentLineImg() {
       return function (imgName) {
-        return `/productionline/${imgName}.png`;
+        return `/img/bags/${imgName}.png`;
       };
     },
     newProduct() {
@@ -134,7 +134,7 @@ export default {
     },
     differentOpenImg() {
       return function (imgName) {
-        return `background:url(/home/opencommunity/${imgName}.png) no-repeat center / cover; transition: all .2s linear;`;
+        return `background:url(/img/bags/newhot/${imgName}.png) no-repeat center / cover; transition: all .2s linear;`;
       };
     },
   },
@@ -1137,7 +1137,7 @@ export default {
             line-height: 1.6rem;
             font-size: $fontSize16;
             font-weight: $fontWeight600;
-            color: #545454;
+            color: #FFFFFF;
           }
 
           .more {
