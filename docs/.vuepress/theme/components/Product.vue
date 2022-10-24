@@ -88,10 +88,97 @@
           <el-pagination
               background
               layout="prev, pager, next"
-              :page-size="9"
+              :page-size="6"
               @current-change="handlePageClick"
               :current-page="currentPage"
               :total="total">
+          </el-pagination>
+        </div>
+
+      </div>
+    </div>
+    <div class="community_bottom">
+      <div class="community_bottom_wrap">
+        <div class="community_bottom_tab_container">
+                    <span class="community_bottom_tab" @click="handleTabClick2(0)"
+                          :class="activeTab2 === 0 ? 'active' : ''">
+                        school bag
+                    </span>
+          <span class="community_bottom_tab" @click="handleTabClick2(1)"
+                :class="activeTab2 === 1 ? 'active' : ''">
+                        laptop backpack
+                    </span>
+          <span class="community_bottom_tab" @click="handleTabClick2(2)"
+                :class="activeTab2 === 2 ? 'active' : ''">
+                        laptop bag
+                    </span>
+        </div>
+
+        <div class="community_bottom_content_container" v-show="activeTab2 === 0" v-if="$frontmatter">
+          <div class="community_bottom_content_item"
+               v-for="(item,index) in schoolbagsList">
+            <img ref="schoolbag"  :src="item.src" @click="handleRouterClick(item)" class="community_bottom_content_item_img">
+            <div class="community_bottom_content_item_time_container">
+                            <span class="community_bottom_content_item_title">
+                                {{ item.title }}
+                            </span>
+              <div class="community_bottom_content_item_wrap1">
+                <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
+                  <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick3(icon,index)">
+                </div>
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="community_bottom_content_container" v-show="activeTab2 === 1" v-if="$frontmatter">
+          <div class="community_bottom_content_item"
+               v-for="(item,index) in laptopbackpacksList">
+            <img ref="laptopbackpack"  :src="item.src" @click="handleRouterClick(item)" class="community_bottom_content_item_img">
+            <div class="community_bottom_content_item_time_container">
+                            <span class="community_bottom_content_item_title">
+                                {{ item.title }}
+                            </span>
+              <div class="community_bottom_content_item_wrap1">
+                <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
+                  <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick4(icon,index)">
+                </div>
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="community_bottom_content_container" v-show="activeTab2 === 2" v-if="$frontmatter">
+          <div class="community_bottom_content_item"
+               v-for="(item,index) in laptopbagsList">
+            <img ref="laptopbag"  :src="item.src" @click="handleRouterClick(item)" class="community_bottom_content_item_img">
+            <div class="community_bottom_content_item_time_container">
+                            <span class="community_bottom_content_item_title">
+                                {{ item.title }}
+                            </span>
+              <div class="community_bottom_content_item_wrap1">
+                <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
+                  <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick5(icon,index)">
+                </div>
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="community_pagination">
+          <el-pagination
+              background
+              layout="prev, pager, next"
+              :page-size="6"
+              @current-change="handlePageClick2"
+              :current-page="currentPage2"
+              :total="total2">
           </el-pagination>
         </div>
 
@@ -108,6 +195,8 @@ export default {
     return {
       total:0,
       currentPage: 1,
+      total2:0,
+      currentPage2: 1,
     }
   },
   watch:{
@@ -115,27 +204,40 @@ export default {
       this.setTotal();
       this.currentPage = 1;
     },
+    activeTab2(){
+      this.setTotal2();
+      this.currentPage2 = 1;
+    },
   },
   computed:{
     activeTab(){
       return +this.$store.state.activeTab;
     },
+    activeTab2(){
+      return +this.$store.state.activeTab2;
+    },
     diaperbagsList(){
       if(this.$frontmatter && this.$frontmatter.diaperbags && this.$frontmatter.diaperbags.length > 0 && this.activeTab === 0){
         let diaperbags = JSON.parse(JSON.stringify(this.$frontmatter.diaperbags))
-        return diaperbags.splice((this.currentPage - 1) * 9, 9);
+        return diaperbags.splice((this.currentPage - 1) * 6, 6);
       }
     },
     laptopbackpacksList(){
       if(this.$frontmatter && this.$frontmatter.laptopbackpacks && this.$frontmatter.laptopbackpacks.length > 0 && this.activeTab === 1){
         let laptopbackpacks = JSON.parse(JSON.stringify(this.$frontmatter.laptopbackpacks))
-        return laptopbackpacks.splice((this.currentPage - 1) * 9, 9);
+        return laptopbackpacks.splice((this.currentPage - 1) * 6, 6);
       }
     },
     laptopbagsList(){
       if(this.$frontmatter && this.$frontmatter.laptopbags && this.$frontmatter.laptopbags.length > 0 && this.activeTab === 2){
         let laptopbags = JSON.parse(JSON.stringify(this.$frontmatter.laptopbags))
-        return laptopbags.splice((this.currentPage - 1) * 9, 9);
+        return laptopbags.splice((this.currentPage - 1) * 6, 6);
+      }
+    },
+    schoolbagsList(){
+      if(this.$frontmatter && this.$frontmatter.schoolbags && this.$frontmatter.schoolbags.length > 0 && this.activeTab2 === 0){
+        let schoolbags = JSON.parse(JSON.stringify(this.$frontmatter.schoolbags))
+        return schoolbags.splice((this.currentPage - 1) * 6, 6);
       }
     },
   },
@@ -147,16 +249,28 @@ export default {
         localStorage.setItem('activeTab',JSON.stringify(tab));
       }
     },
+    handleTabClick2(tab){
+      if (this.activeTab2 !== tab) {
+        this.$store.commit('activeTab2',tab);
+        localStorage.setItem('activeTab2',JSON.stringify(tab));
+      }
+    },
     setTotal(){
       if(this.activeTab === 0 && this.$frontmatter.diaperbags.length >= 0){
-        console.log(this.activeTab)
         this.total = this.$frontmatter.diaperbags.length;
       }else if(this.activeTab === 1 && this.$frontmatter.laptopbackpacks.length >= 0){
-        console.log(this.activeTab)
         this.total = this.$frontmatter.laptopbackpacks.length;
       } else if(this.activeTab === 2 && this.$frontmatter.laptopbags.length >= 0){
-        console.log(this.activeTab)
         this.total = this.$frontmatter.laptopbags.length;
+      }
+    },
+    setTotal2(){
+      if(this.activeTab2 === 0 && this.$frontmatter.diaperbags.length >= 0){
+        this.total2 = this.$frontmatter.diaperbags.length;
+      }else if(this.activeTab2 === 1 && this.$frontmatter.laptopbackpacks.length >= 0){
+        this.total2 = this.$frontmatter.laptopbackpacks.length;
+      } else if(this.activeTab2 === 2 && this.$frontmatter.laptopbags.length >= 0){
+        this.total2 = this.$frontmatter.laptopbags.length;
       }
     },
     handleRouterClick(article){
@@ -173,12 +287,25 @@ export default {
     handleIconClick2(icon,index){
       this.$refs.laptopbag[index].src=icon
     },
+    handleIconClick3(icon,index){
+      this.$refs.schoolbag[index].src=icon
+    },
+    handleIconClick4(icon,index){
+      this.$refs.laptopbackpack[index].src=icon
+    },
+    handleIconClick5(icon,index){
+      this.$refs.laptopbag[index].src=icon
+    },
     handlePageClick(page){
       this.currentPage = page;
+    },
+    handlePageClick2(page){
+      this.currentPage2= page;
     },
   },
   mounted(){
     this.setTotal();
+    this.setTotal2();
   },
 }
 </script>

@@ -5,6 +5,7 @@ export default new Vuex.Store({
 	state: {
 		currentIndex: 0,
 		activeTab: 0,
+		activeTab2: 0,
 		articleData:null,
 	},
 	mutations: {
