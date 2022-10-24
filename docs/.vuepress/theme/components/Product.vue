@@ -65,6 +65,25 @@
           </div>
         </div>
 
+        <div class="community_bottom_content_container" v-show="activeTab === 2" v-if="$frontmatter">
+          <div class="community_bottom_content_item"
+               v-for="(item,index) in laptopbagsList">
+            <img ref="laptopbag"  :src="item.src" @click="handleRouterClick(item)" class="community_bottom_content_item_img">
+            <div class="community_bottom_content_item_time_container">
+                            <span class="community_bottom_content_item_title">
+                                {{ item.title }}
+                            </span>
+              <div class="community_bottom_content_item_wrap1">
+                <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
+                  <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick2(icon,index)">
+                </div>
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
         <div class="community_pagination">
           <el-pagination
               background
@@ -113,6 +132,12 @@ export default {
         return laptopbackpacks.splice((this.currentPage - 1) * 9, 9);
       }
     },
+    laptopbagsList(){
+      if(this.$frontmatter && this.$frontmatter.laptopbags && this.$frontmatter.laptopbags.length > 0 && this.activeTab === 2){
+        let laptopbags = JSON.parse(JSON.stringify(this.$frontmatter.laptopbags))
+        return laptopbags.splice((this.currentPage - 1) * 9, 9);
+      }
+    },
   },
 
   methods : {
@@ -124,9 +149,14 @@ export default {
     },
     setTotal(){
       if(this.activeTab === 0 && this.$frontmatter.diaperbags.length >= 0){
+        console.log(this.activeTab)
         this.total = this.$frontmatter.diaperbags.length;
       }else if(this.activeTab === 1 && this.$frontmatter.laptopbackpacks.length >= 0){
+        console.log(this.activeTab)
         this.total = this.$frontmatter.laptopbackpacks.length;
+      } else if(this.activeTab === 2 && this.$frontmatter.laptopbags.length >= 0){
+        console.log(this.activeTab)
+        this.total = this.$frontmatter.laptopbags.length;
       }
     },
     handleRouterClick(article){
@@ -139,6 +169,9 @@ export default {
     },
     handleIconClick1(icon,index){
       this.$refs.laptopbackpack[index].src=icon
+    },
+    handleIconClick2(icon,index){
+      this.$refs.laptopbag[index].src=icon
     },
     handlePageClick(page){
       this.currentPage = page;

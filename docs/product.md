@@ -613,7 +613,77 @@
         ],
         router: /product/product-001,
     },
+    ],
+laptopbags: [
+{
+src: /img/bags/laptopbag/NB1210-1.jpg,
+title: NB1210,
+owner: xito,
+price: $1,
+icons: [
+/img/bags/laptopbag/NB1210-1.jpg,
+/img/bags/laptopbag/NB1210-2.jpg,
+/img/bags/laptopbag/NB1210-3.jpg,
+/img/bags/laptopbag/NB1210-4.jpg,
+/img/bags/laptopbag/NB1210-5.jpg,
 ],
-
+router: /product/product-001,
+},
+{
+src: /img/bags/laptopbag/NB1211-1.jpg,
+title: NB1211,
+owner: xito,
+price: $1,
+icons: [
+/img/bags/laptopbag/NB1211-1.jpg,
+/img/bags/laptopbag/NB1211-2.jpg,
+/img/bags/laptopbag/NB1211-3.jpg,
+/img/bags/laptopbag/NB1211-4.jpg,
+/img/bags/laptopbag/NB1211-5.jpg,
+],
+router: /product/product-001,
+},
+{
+src: /img/bags/laptopbag/NB1212-1.jpg,
+title: NB1212,
+owner: xito,
+price: $1,
+icons: [
+/img/bags/laptopbag/NB1212-1.jpg,
+/img/bags/laptopbag/NB1212-2.jpg,
+/img/bags/laptopbag/NB1212-3.jpg,
+/img/bags/laptopbag/NB1212-4.jpg,
+],
+router: /product/product-001,
+},
+{
+src: /img/bags/laptopbag/NB1211-1.jpg,
+title: NB1210,
+owner: xito,
+price: $1,
+icons: [
+/img/bags/laptopbag/NB1210-1.jpg,
+/img/bags/laptopbag/NB1210-2.jpg,
+/img/bags/laptopbag/NB1210-3.jpg,
+/img/bags/laptopbag/NB1210-4.jpg,
+/img/bags/laptopbag/NB1210-5.jpg,
+],
+router: /product/product-001,
+},
+{
+src: /img/bags/laptopbag/NB1210-1.jpg,
+title: NB1210,
+owner: xito,
+price: $1,
+icons: [
+/img/bags/laptopbag/NB1210-1.jpg,
+/img/bags/laptopbag/NB1210-2.jpg,
+/img/bags/laptopbag/NB1210-3.jpg,
+/img/bags/laptopbag/NB1210-4.jpg,
+/img/bags/laptopbag/NB1210-5.jpg,
+],
+router: /product/product-001,
+},
+]
 }
 ---
