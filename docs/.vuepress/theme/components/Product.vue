@@ -35,14 +35,15 @@
                             <span class="community_bottom_content_item_title">
                                 {{ item.title }}
                             </span>
+              <div style="width: 100%;margin-top: -16px;">
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
               <div class="community_bottom_content_item_wrap1">
                 <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
                   <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick(icon,index)">
                 </div>
               </div>
-              <div style="width: 100%;margin-top: -16px;">
-                <span class="community_bottom_content_item_time">{{ item.price }}</span>
-              </div>
+
             </div>
           </div>
         </div>
@@ -55,15 +56,14 @@
                             <span class="community_bottom_content_item_title">
                                 {{ item.title }}
                             </span>
+              <div style="width: 100%;margin-top: -16px;">
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
               <div class="community_bottom_content_item_wrap1">
                 <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
                   <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick1(icon,index)">
                 </div>
               </div>
-              <div style="width: 100%;margin-top: -16px;">
-                <span class="community_bottom_content_item_time">{{ item.price }}</span>
-              </div>
-
             </div>
           </div>
         </div>
@@ -76,13 +76,13 @@
                             <span class="community_bottom_content_item_title">
                                 {{ item.title }}
                             </span>
+              <div style="width: 100%;margin-top: -16px;">
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
               <div class="community_bottom_content_item_wrap1">
                 <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
                   <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick2(icon,index)">
                 </div>
-              </div>
-              <div style="width: 100%;margin-top: -16px;">
-                <span class="community_bottom_content_item_time">{{ item.price }}</span>
               </div>
             </div>
           </div>
@@ -127,13 +127,13 @@
                             <span class="community_bottom_content_item_title">
                                 {{ item.title }}
                             </span>
+              <div style="width: 100%;margin-top: -16px;">
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
               <div class="community_bottom_content_item_wrap1">
                 <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
                   <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick3(icon,index)">
                 </div>
-              </div>
-              <div style="width: 100%;margin-top: -16px;">
-                <span class="community_bottom_content_item_time">{{ item.price }}</span>
               </div>
 
             </div>
@@ -148,14 +148,15 @@
                             <span class="community_bottom_content_item_title">
                                 {{ item.title }}
                             </span>
+              <div style="width: 100%;margin-top: -16px;">
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
               <div class="community_bottom_content_item_wrap1">
                 <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
                   <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick4(icon,index)">
                 </div>
               </div>
-              <div style="width: 100%;margin-top: -16px;">
-                <span class="community_bottom_content_item_time">{{ item.price }}</span>
-              </div>
+
             </div>
           </div>
         </div>
@@ -168,13 +169,13 @@
                             <span class="community_bottom_content_item_title">
                                 {{ item.title }}
                             </span>
+              <div style="width: 100%;margin-top: -16px;">
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
               <div class="community_bottom_content_item_wrap1">
                 <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
                   <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick5(icon,index)">
                 </div>
-              </div>
-              <div style="width: 100%;margin-top: -16px;">
-                <span class="community_bottom_content_item_time">{{ item.price }}</span>
               </div>
 
             </div>
