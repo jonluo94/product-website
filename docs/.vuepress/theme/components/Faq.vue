@@ -295,11 +295,11 @@ export default {
                 }
               }
 
-              .community_bottom_content_item_time {
-                font-size: 14px;
-                font-weight: 400;
-                color: rgba(0, 0, 0, 0.65);
-              }
+              //.community_bottom_content_item_time {
+              //  font-size: 14px;
+              //  font-weight: 400;
+              //  color: rgba(0, 0, 0, 0.65);
+              //}
             }
 
           }

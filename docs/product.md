@@ -1543,6 +1543,152 @@
         ],
         router: /product/product-001,
     },
+    ],
+    sportbags: [
+    {
+        src: /img/bags/sportbag/SP22301.png,
+        title: SP22301,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22301.png,
+        ],  
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22302.png,
+        title: SP22302,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22302.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22303.png,
+        title: SP22303,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22303.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22304.png,
+        title: SP22304,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22304.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22305.png,
+        title: SP22305,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22305.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22306.png,
+        title: SP22306,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22306.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22307.png,
+        title: SP22307,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22307.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22308.png,
+        title: SP22308,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22308.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22309.png,
+        title: SP22309,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22309.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22310.png,
+        title: SP22310,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22310.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22311.png,
+        title: SP22311,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22311.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22312.png,
+        title: SP223312,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22312.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22313.png,
+        title: SP223313,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22313.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22314.png,
+        title: SP223314,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22314.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22315.png,
+        title: SP223315,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22315.png,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/sportbag/SP22316.png,
+        title: SP223316,
+        price: $1,
+        icons: [
+        /img/bags/sportbag/SP22316.png,
+        ],
+        router: /product/product-001,
+    }
     ]
 }
 ---

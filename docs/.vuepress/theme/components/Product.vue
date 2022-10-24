@@ -39,9 +39,10 @@
                 <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
                   <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick(icon,index)">
                 </div>
+              </div>
+              <div style="width: 100%;margin-top: -16px;">
                 <span class="community_bottom_content_item_time">{{ item.price }}</span>
               </div>
-
             </div>
           </div>
         </div>
@@ -58,6 +59,8 @@
                 <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
                   <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick1(icon,index)">
                 </div>
+              </div>
+              <div style="width: 100%;margin-top: -16px;">
                 <span class="community_bottom_content_item_time">{{ item.price }}</span>
               </div>
 
@@ -77,9 +80,10 @@
                 <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
                   <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick2(icon,index)">
                 </div>
+              </div>
+              <div style="width: 100%;margin-top: -16px;">
                 <span class="community_bottom_content_item_time">{{ item.price }}</span>
               </div>
-
             </div>
           </div>
         </div>
@@ -89,6 +93,7 @@
               background
               layout="prev, pager, next"
               :page-size="6"
+              :pager-count="3"
               @current-change="handlePageClick"
               :current-page="currentPage"
               :total="total">
@@ -108,6 +113,10 @@
                 :class="activeTab2 === 1 ? 'active' : ''">
                         shoulder bag
                     </span>
+          <span class="community_bottom_tab" @click="handleTabClick2(2)"
+                :class="activeTab2 === 2 ? 'active' : ''">
+                        sport bag
+                    </span>
         </div>
 
         <div class="community_bottom_content_container" v-show="activeTab2 === 0" v-if="$frontmatter">
@@ -122,6 +131,8 @@
                 <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
                   <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick3(icon,index)">
                 </div>
+              </div>
+              <div style="width: 100%;margin-top: -16px;">
                 <span class="community_bottom_content_item_time">{{ item.price }}</span>
               </div>
 
@@ -141,6 +152,28 @@
                 <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
                   <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick4(icon,index)">
                 </div>
+              </div>
+              <div style="width: 100%;margin-top: -16px;">
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="community_bottom_content_container" v-show="activeTab2 === 2" v-if="$frontmatter">
+          <div class="community_bottom_content_item"
+               v-for="(item,index) in sportbagsList">
+            <img ref="sportbag"  :src="item.src" @click="handleRouterClick(item)" class="community_bottom_content_item_img">
+            <div class="community_bottom_content_item_time_container">
+                            <span class="community_bottom_content_item_title">
+                                {{ item.title }}
+                            </span>
+              <div class="community_bottom_content_item_wrap1">
+                <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
+                  <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick5(icon,index)">
+                </div>
+              </div>
+              <div style="width: 100%;margin-top: -16px;">
                 <span class="community_bottom_content_item_time">{{ item.price }}</span>
               </div>
 
@@ -153,6 +186,7 @@
               background
               layout="prev, pager, next"
               :page-size="6"
+              :pager-count="3"
               @current-change="handlePageClick2"
               :current-page="currentPage2"
               :total="total2">
@@ -223,6 +257,12 @@ export default {
         return shoulderbags.splice((this.currentPage2 - 1) * 6, 6);
       }
     },
+    sportbagsList(){
+      if(this.$frontmatter && this.$frontmatter.sportbags && this.$frontmatter.sportbags.length > 0 && this.activeTab2 === 2){
+        let sportbags = JSON.parse(JSON.stringify(this.$frontmatter.sportbags))
+        return sportbags.splice((this.currentPage2 - 1) * 6, 6);
+      }
+    },
   },
 
   methods : {
@@ -250,8 +290,8 @@ export default {
         this.total2 = this.$frontmatter.schoolbags.length;
       }else if(this.activeTab2 === 1 && this.$frontmatter.shoulderbags.length >= 0){
         this.total2 = this.$frontmatter.shoulderbags.length;
-      } else if(this.activeTab2 === 2 && this.$frontmatter.laptopbags.length >= 0){
-        this.total2 = this.$frontmatter.laptopbags.length;
+      } else if(this.activeTab2 === 2 && this.$frontmatter.sportbags.length >= 0){
+        this.total2 = this.$frontmatter.sportbags.length;
       }
     },
     handleRouterClick(article){
@@ -275,7 +315,7 @@ export default {
       this.$refs.shoulderbag[index].src=icon
     },
     handleIconClick5(icon,index){
-      this.$refs.laptopbag[index].src=icon
+      this.$refs.sportbag[index].src=icon
     },
     handlePageClick(page){
       this.currentPage = page;
@@ -502,15 +542,16 @@ export default {
                   color: rgba(0, 0, 0, 0.65);
                 }
               }
-
-              .community_bottom_content_item_time {
-                font-size: 14px;
-                font-weight: 400;
-                color: rgba(0, 0, 0, 0.65);
-              }
+            }
+            .community_bottom_content_item_time {
+              font-size: 14px;
+              font-weight: 400;
+              float:right;
+              color: rgba(0, 0, 0, 0.65);
             }
 
           }
+
 
           .community_bottom_content_item_detail {
             height: 45px;
