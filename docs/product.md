@@ -844,6 +844,61 @@ icons: [
 ],
 router: /product/product-001,
 },
+{
+src: /img/bags/schoolbag/SB1086-1.jpg,
+title: SB1086,
+owner: xito,
+price: $1,
+icons: [
+/img/bags/schoolbag/SB1086-1.jpg,
+],
+router: /product/product-001,
+},
+{
+src: /img/bags/schoolbag/SB1098-1.jpg,
+title: SB1098,
+owner: xito,
+price: $1,
+icons: [
+/img/bags/schoolbag/SB1098-1.jpg,
+],
+router: /product/product-001,
+},
+{
+src: /img/bags/schoolbag/SB1101-1.jpg,
+title: SB1101,
+owner: xito,
+price: $1,
+icons: [
+/img/bags/schoolbag/SB1101-1.jpg,
+/img/bags/schoolbag/SB1101-2.jpg,
+],
+router: /product/product-001,
+},
+{
+src: /img/bags/schoolbag/SB1105-2.jpg,
+title: SB1105,
+owner: xito,
+price: $1,
+icons: [
+/img/bags/schoolbag/SB1105-2.jpg,
+/img/bags/schoolbag/SB1105-3.jpg,
+],
+router: /product/product-001,
+},
+{
+src: /img/bags/schoolbag/SB1109-1.jpg,
+title: SB1109,
+owner: xito,
+price: $1,
+icons: [
+/img/bags/schoolbag/SB1109-1.jpg,
+/img/bags/schoolbag/SB1109-2.jpg,
+/img/bags/schoolbag/SB1109-3.jpg,
+/img/bags/schoolbag/SB1109-4.jpg,
+],
+router: /product/product-001,
+},
 ]
 }
 ---

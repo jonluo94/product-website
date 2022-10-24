@@ -15,6 +15,9 @@ export default new Vuex.Store({
 		activeTab(state,activeTab){
 			state.activeTab = activeTab;
 		},
+		activeTab2(state,activeTab2){
+			state.activeTab2= activeTab2;
+		},
 		articleData(state,articleData){
 			state.articleData = articleData;
 		}
