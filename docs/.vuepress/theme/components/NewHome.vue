@@ -117,7 +117,7 @@ export default {
     },
     differentOpenImg() {
       return function (imgName) {
-        return `background:url(/img/bags/newhot/${imgName}.png) no-repeat center / cover; transition: all .2s linear;`;
+        return `background:url(/img/bags/anewhot/${imgName}.png) no-repeat center / cover; transition: all .2s linear;`;
       };
     },
   },
