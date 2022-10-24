@@ -5,18 +5,7 @@
     homeContent: {
         title: XIBO(C-BOXBAG),
         subTitle: 'the bag manufactuer with nearly 15 years making bags experience, trend setting, eco-friendly, reusable bags',
-    homeLink: [
-    {
-        icon: icon-doct,
-        type: 技术文档,
-        href: https://irita.bianjie.ai/docs/
-    },
-    {
-        icon: icon-github,
-        type: GitHub,
-        href: https://github.com/bianjieai/irita
-    }
-    ]
+    homeLink: []
     },
     newProduct: {
         text: New Products,

@@ -5,7 +5,7 @@
         <div class="community_top_left">
           <i class="community_top_left_border"></i>
           <span class="community_top_left_sub_title">
-                        在这里, 了解 IRITA
+                        Bags Products
                     </span>
         </div>
       </div>
@@ -15,23 +15,27 @@
         <div class="community_bottom_tab_container">
                     <span class="community_bottom_tab" @click="handleTabClick(0)"
                           :class="activeTab === 0 ? 'active' : ''">
-                        技术博客
+                        diaper bag
                     </span>
           <span class="community_bottom_tab" @click="handleTabClick(1)"
                 :class="activeTab === 1 ? 'active' : ''">
-                        文章资讯
+                        laptop backpack
                     </span>
-          <span class="community_bottom_tab" @click="handleTabClick(1)"
+          <span class="community_bottom_tab" @click="handleTabClick(2)"
                 :class="activeTab === 1 ? 'active' : ''">
-                        文章资讯
+                        laptop bag
                     </span>
-          <span class="community_bottom_tab" @click="handleTabClick(1)"
+          <span class="community_bottom_tab" @click="handleTabClick(3)"
                 :class="activeTab === 1 ? 'active' : ''">
-                        文章资讯
+                        school bag
                     </span>
-          <span class="community_bottom_tab" @click="handleTabClick(1)"
+          <span class="community_bottom_tab" @click="handleTabClick(4)"
                 :class="activeTab === 1 ? 'active' : ''">
-                        文章资讯
+                        shoulder bag
+                    </span>
+          <span class="community_bottom_tab" @click="handleTabClick(5)"
+                :class="activeTab === 1 ? 'active' : ''">
+                        sport bag
                     </span>
         </div>
         <div class="community_bottom_content_container" v-show="activeTab === 0" v-if="$frontmatter">
@@ -44,7 +48,30 @@
                             <span class="community_bottom_content_item_title">
                                 {{ item.title }}
                             </span>
-              <div class="community_bottom_content_item_wrap">
+              <div class="community_bottom_content_item_wrap1">
+                <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
+                  <img :src="$withBase(icon)" class="community_bottom_content_item_icon">
+                </div>
+                <span class="community_bottom_content_item_time">
+                                {{ item.price }}
+                            </span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="community_bottom_content_container" v-show="activeTab === 1" v-if="$frontmatter">
+          <div class="community_bottom_content_item"
+               @click="handleArticleClick(item)"
+               v-for="item in blogList">
+            <img :src="$withBase(item.src)" class="community_bottom_content_item_img">
+
+            <div class="community_bottom_content_item_time_container">
+                            <span class="community_bottom_content_item_title">
+                                {{ item.title }}
+                            </span>
+              <div class="community_bottom_content_item_wrap1">
                 <div class="community_bottom_content_item_owner_container">
                   <img :src="$withBase(item.icon)" class="community_bottom_content_item_icon">
                   <span class="community_bottom_content_item_owner">
@@ -63,38 +90,123 @@
           </div>
 
         </div>
-        <div class="community_bottom_content_article_container" v-show="activeTab === 1" v-if="$frontmatter">
-          <div class="community_bottom_content_article_item"
+        <div class="community_bottom_content_container" v-show="activeTab === 2" v-if="$frontmatter">
+          <div class="community_bottom_content_item"
                @click="handleArticleClick(item)"
-               v-for="(item, index) in articleList">
-            <div class="community_bottom_content_article_item_left">
-              <div class="community_bottom_content_article_item_left_top">
-                                <span class="community_bottom_content_article_item_left_top_month">
-                                    {{ item.month }}
-                                </span>
-                <span class="community_bottom_content_article_item_left_top_date">
-                                    {{ item.date }}
-                                </span>
+               v-for="item in blogList">
+            <img :src="$withBase(item.src)" class="community_bottom_content_item_img">
 
-              </div>
-              <span class="community_bottom_content_article_item_left_bottom">
-                                {{ item.year }}
-                            </span>
-            </div>
-            <div class="community_bottom_content_article_item_right">
-                            <span class="community_bottom_content_article_item_right_title">
+            <div class="community_bottom_content_item_time_container">
+                            <span class="community_bottom_content_item_title">
                                 {{ item.title }}
-                                <i class="community_bottom_content_article_item_right_tag" v-show="currentPage === 1 && index === 0">
-                                    new
-                                </i>
                             </span>
-              <span class="community_bottom_content_article_item_right_content">
-                                {{ item.content }}
+              <div class="community_bottom_content_item_wrap1">
+                <div class="community_bottom_content_item_owner_container">
+                  <img :src="$withBase(item.icon)" class="community_bottom_content_item_icon">
+                  <span class="community_bottom_content_item_owner">
+                                    {{ item.owner }}
+                                </span>
+                </div>
+                <span class="community_bottom_content_item_time">
+                                {{ item.time }}
                             </span>
+              </div>
 
             </div>
+            <span class="community_bottom_content_item_detail">
+                            文章详情
+                        </span>
           </div>
+
         </div>
+        <div class="community_bottom_content_container" v-show="activeTab === 3" v-if="$frontmatter">
+          <div class="community_bottom_content_item"
+               @click="handleArticleClick(item)"
+               v-for="item in blogList">
+            <img :src="$withBase(item.src)" class="community_bottom_content_item_img">
+
+            <div class="community_bottom_content_item_time_container">
+                            <span class="community_bottom_content_item_title">
+                                {{ item.title }}
+                            </span>
+              <div class="community_bottom_content_item_wrap1">
+                <div class="community_bottom_content_item_owner_container">
+                  <img :src="$withBase(item.icon)" class="community_bottom_content_item_icon">
+                  <span class="community_bottom_content_item_owner">
+                                    {{ item.owner }}
+                                </span>
+                </div>
+                <span class="community_bottom_content_item_time">
+                                {{ item.time }}
+                            </span>
+              </div>
+
+            </div>
+            <span class="community_bottom_content_item_detail">
+                            文章详情
+                        </span>
+          </div>
+
+        </div>
+        <div class="community_bottom_content_container" v-show="activeTab === 4" v-if="$frontmatter">
+          <div class="community_bottom_content_item"
+               @click="handleArticleClick(item)"
+               v-for="item in blogList">
+            <img :src="$withBase(item.src)" class="community_bottom_content_item_img">
+
+            <div class="community_bottom_content_item_time_container">
+                            <span class="community_bottom_content_item_title">
+                                {{ item.title }}
+                            </span>
+              <div class="community_bottom_content_item_wrap1">
+                <div class="community_bottom_content_item_owner_container">
+                  <img :src="$withBase(item.icon)" class="community_bottom_content_item_icon">
+                  <span class="community_bottom_content_item_owner">
+                                    {{ item.owner }}
+                                </span>
+                </div>
+                <span class="community_bottom_content_item_time">
+                                {{ item.time }}
+                            </span>
+              </div>
+
+            </div>
+            <span class="community_bottom_content_item_detail">
+                            文章详情
+                        </span>
+          </div>
+
+        </div>
+        <div class="community_bottom_content_container" v-show="activeTab === 5" v-if="$frontmatter">
+          <div class="community_bottom_content_item"
+               @click="handleArticleClick(item)"
+               v-for="item in blogList">
+            <img :src="$withBase(item.src)" class="community_bottom_content_item_img">
+
+            <div class="community_bottom_content_item_time_container">
+                            <span class="community_bottom_content_item_title">
+                                {{ item.title }}
+                            </span>
+              <div class="community_bottom_content_item_wrap1">
+                <div class="community_bottom_content_item_owner_container">
+                  <img :src="$withBase(item.icon)" class="community_bottom_content_item_icon">
+                  <span class="community_bottom_content_item_owner">
+                                    {{ item.owner }}
+                                </span>
+                </div>
+                <span class="community_bottom_content_item_time">
+                                {{ item.time }}
+                            </span>
+              </div>
+
+            </div>
+            <span class="community_bottom_content_item_detail">
+                            文章详情
+                        </span>
+          </div>
+
+        </div>
+
         <div class="community_pagination">
           <el-pagination
               background
@@ -359,10 +471,10 @@ export default {
               }
             }
 
-            .community_bottom_content_item_wrap {
+            .community_bottom_content_item_wrap1 {
               display: flex;
               flex-wrap: wrap;
-              justify-content space-between;
+              justify-content: left;
               align-items center;
               margin-top: 1rem;
               @media (max-width: 768px) {
@@ -379,7 +491,7 @@ export default {
                 .community_bottom_content_item_icon {
                   width: 24px;
                   height: 24px;
-                  margin-right: 4px;
+                  margin-right: 1px;
                 }
 
                 .community_bottom_content_item_owner {

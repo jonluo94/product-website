@@ -1,7 +1,7 @@
 ---
 {
     layout: Layout,
-isArticle: true,
+    isArticle: true,
     articles:[
     {
         month: Mar,
@@ -11,86 +11,6 @@ isArticle: true,
         content: news-001,
         router: /news/news-001,
     },
-    {
-        month: Mar,
-        date: 06,
-        year: 2022,
-        title: New2 ,
-        content: news-001,
-        router: /news/news-001,
-    },
-    {
-        month: Mar,
-        date: 06,
-        year: 2022,
-        title: New3 ,
-        content: news-001,
-        router: /news/news-001,
-    },
-    {
-        month: Mar,
-        date: 06,
-        year: 2022,
-        title: New4 ,
-        content: news-001,
-        router: /news/news-001,
-    },
-    {
-        month: Mar,
-        date: 06,
-        year: 2022,
-        title: New5 ,
-        content: news-001,
-        router: /news/news-001,
-    },
-    {
-        month: Mar,
-        date: 06,
-        year: 2022,
-        title: New6 ,
-        content: news-001,
-        router: /news/news-001,
-    },
-    {
-        month: Mar,
-        date: 06,
-        year: 2022,
-        title: New7 ,
-        content: news-001,
-        router: /news/news-001,
-    },
-    {
-        month: Mar,
-        date: 06,
-        year: 2022,
-        title: New8 ,
-        content: news-001,
-        router: /news/news-001,
-    },
-    {
-        month: Mar,
-        date: 06,
-        year: 2022,
-        title: New9 ,
-        content: news-001,
-        router: /news/news-001,
-    },
-    {
-        month: Mar,
-        date: 06,
-        year: 2022,
-        title: New10 ,
-        content: news-001,
-        router: /news/news-001,
-    },
-    {
-        month: Mar,
-        date: 06,
-        year: 2022,
-        title: New11 ,
-        content: news-001,
-        router: /news/news-001,
-    }
     ]
 }
 ---
