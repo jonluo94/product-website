@@ -248,7 +248,7 @@ export default {
       }
 
       .top_content_title {
-        height: 6.4rem;
+        height: 10.4rem;
         line-height: 6.4rem;
         font-size: $fontSize60;
         font-weight: $fontWeight400;

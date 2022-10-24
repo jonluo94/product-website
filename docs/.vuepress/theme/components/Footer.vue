@@ -12,32 +12,29 @@
                             />
                         </div>
                         <p class="img_desc">
-                            支持下一代分布式商业系统的企业级联盟链产品线
+                          the bag manufactuer with nearly 15 years making bags experience, trend setting, eco-friendly, reusable bags
                         </p>
                     </div>
                     <div class="content_right">
                         <div class="line"></div>
                         <div class="contact">
                             <span class="contact_title">Contacts</span>
-                            <span class="email">xxxx@gmail.com</span>
+                            <span class="email"><AcceptEmail />cboxbag2005@vip.163.com</span>
+                            <span class="email"><PhoneAndroid />8613710740039</span>
+                            <span class="email"><PhoneAndroid />8613928886938</span>
                         </div>
                         <div class="focus">
                             <span class="focus_title">Follow Us</span>
                           <div>
-                            <a href="https://www.facebook.com/"
+                            <a href="https://web.whatsapp.com/"
                                target="_blank"
                                rel="noopener noreferrer">
-                              <LogosFacebook style="font-size: 4.0rem;"/>
+                              <LogosWhatsappIcon style="font-size: 4.0rem;"/>
                             </a>
-                            <a href="https://twitter.com/"
+                            <a href="https://wx.qq.com"
                                target="_blank"
                                rel="noopener noreferrer">
-                              <LogosTwitter style="font-size: 4.0rem;"/>
-                            </a>
-                            <a href="https://www.linkedin.com/"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                              <LogosLinkedinIcon style="font-size: 4.0rem;"/>
+                              <Weixin style="font-size: 4.0rem;"/>
                             </a>
                           </div>
 
@@ -49,7 +46,7 @@
         <div class="footer_content_bottom">
             <div class="bottom_content">
               <span class="police_content"></span>
-              <span class="copyright_content">{{`Copyright ©2022-${new Date().getFullYear()} XX company` }}</span>
+              <span class="copyright_content">{{`Copyright ©2022-${new Date().getFullYear()} XIBO(C-BOXBAG)` }}</span>
               <span class="police_content"></span>
             </div>
         </div>
@@ -60,6 +57,10 @@
 import LogosFacebook from "../global-components/LogosFacebook";
 import LogosTwitter from "../global-components/LogosTwitter";
 import LogosLinkedinIcon from "../global-components/LogosLinkedinIcon";
+import LogosWhatsappIcon from "../global-components/LogosWhatsappIcon";
+import Weixin from "../global-components/Weixin";
+import AcceptEmail from "../global-components/AcceptEmail";
+import PhoneAndroid from "../global-components/PhoneAndroid";
 export default {
   name: "Footer",
   data() {
@@ -70,6 +71,10 @@ export default {
     LogosFacebook,
     LogosTwitter,
     LogosLinkedinIcon,
+    AcceptEmail,
+    PhoneAndroid,
+    LogosWhatsappIcon,
+    Weixin,
   },
 
 };
@@ -183,7 +188,7 @@ export default {
                     -webkit-box-orient: vertical;
                     -ms-flex-direction: column;
                     -webkit-flex-direction: column;
-                    margin: 0 8rem;
+                    margin: 0 2rem;
 
                     .contact_title {
                         height: 2.4rem;
@@ -194,7 +199,7 @@ export default {
                     }
 
                     .email {
-                        margin: 2.4rem 0;
+                        margin: 1.0rem 0;
                         height: 2.4rem;
                         line-height: 2.4rem;
                         font-size: $fontSize16;

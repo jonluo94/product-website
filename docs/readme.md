@@ -3,8 +3,8 @@
     layout: Layout,
     isNewHome: true,
     homeContent: {
-        title: Xibo Bags,
-        subTitle: 支持下一代分布式商业的企业级联盟链产品线,
+        title: XIBO(C-BOXBAG),
+        subTitle: 'the bag manufactuer with nearly 15 years making bags experience, trend setting, eco-friendly, reusable bags',
     homeLink: [
     {
         icon: icon-doct,

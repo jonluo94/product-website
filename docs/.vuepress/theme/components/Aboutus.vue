@@ -13,246 +13,46 @@
         <div class="developer_middle_top">
             <div class="developer_middle_top_wrap">
                 <span class="developer_middle_top_top">
-                    您能基于 IRITA 开发什么?
+                    Company Profile
                 </span>
                 <div class="developer_middle_top_bottom">
-                    <img
-                        src="../assets/developer_middle_top_img.png"
-                        alt=""
-                        class="developer_middle_top_left"
-                    />
                     <div class="developer_middle_top_right">
                         <div class="developer_middle_top_right_top">
                             <div class="developer_middle_top_right_top_item">
                                 <span
-                                    class="developer_middle_top_right_top_title"
-                                >
-                                    跨链服务平台
-                                </span>
-                                <span
                                     class="developer_middle_top_right_top_content"
                                 >
-                                    基于 IRITA 跨链技术-IBC 协议,
-                                    开发异构链服务平台
+                                  We are the bag manufactuer with nearly 15 years making bags experience .
+                        XIBO(C-BOXBAG) is a certified supplier of cusom, trend setting, eco-friendly, reusable bags, as one of the professional bag supplier in China.
+                        We create highly customized reusable bag. Designed to your exact Specification. Supporting your unique vision.Choose your own fabric, shape, size, color, design.
+                        We can offer the widest variety of option to help our client create fully branded.
+
                                 </span>
                             </div>
                             <div class="developer_middle_top_right_top_item">
-                                <span
-                                    class="developer_middle_top_right_top_title"
-                                >
-                                    资产数字化管理平台
-                                </span>
+                              <img class="developer_middle_top_right_top_content"
+                                  src="img/bg/us1.png"
+                              />
+                            </div>
+                            <div class="developer_middle_top_right_top_item">
+                              <img class="developer_middle_top_right_top_content"
+                                   src="img/bg/us2.png"
+                              />
+                            </div>
+                            <div class="developer_middle_top_right_top_item">
                                 <span
                                     class="
                                         developer_middle_top_right_top_content
                                     "
                                 >
-                                    以 NFT 为基础, 采用分布式,
-                                    安全可信的方式对资产进行数字化
-                                </span>
-                            </div>
-                            <div class="developer_middle_top_right_top_item">
-                                <span
-                                    class="developer_middle_top_right_top_title"
-                                >
-                                    分布式应用
-                                </span>
-                                <span
-                                    class="
-                                        developer_middle_top_right_top_content
-                                    "
-                                >
-                                    基于 IRITA 的智能合约开发各种分布式应用 Dapp
-                                </span>
-                            </div>
-                            <div class="developer_middle_top_right_top_item">
-                                <span
-                                    class="developer_middle_top_right_top_title"
-                                >
-                                    传统业务系统链改
-                                </span>
-                                <span
-                                    class="
-                                        developer_middle_top_right_top_content
-                                    "
-                                >
-                                    基于 iService 模块, 实现链上链下可信交互,
-                                    高效支持各类传统业务系统的集成
+                                     OEM & ODM are available, strict quality control excellent designs that always seize the market demand, fast delivery and certainly the competitive prices make us won the trust of customers and respected.
+                        Established a good reputation, when you cooperate with us, you will own the whole resoruce of the most important bag production base on China.
+
                                 </span>
                             </div>
                         </div>
-                        <a
-                            class="developer_middle_top_right_bottom"
-                            href="https://github.com/bianjieai/irita"
-                            target="_blank"
-                        >
-                            <span class="developer_middle_top_right_know">
-                                了解更多
-                            </span>
-                            <img
-                                src="../assets/developer_arrow_right.png"
-                                class="developer_middle_top_right_iconfont"
-                            />
-                        </a>
+
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="developer_middle_bottom">
-            <div class="developer_middle_bottom_wrap">
-                <div class="developer_title_content">
-                    <span class="developer_middle_bottom_title">
-                        为什么选择 IRITA
-                    </span>
-                </div>
-                <div class="developer_middle_bottom_content">
-                    <div class="developer_middle_bottom_item">
-                        <img
-                            src="../assets/SDK_icon.png"
-                            class="developer_middle_bottom_item_icon"
-                        />
-                        <span class="developer_middle_bottom_item_title">
-                            SDKs
-                        </span>
-                        <span
-                            class="
-                                developer_middle_bottom_item_content
-                                _no_border
-                            "
-                        >
-                            多种语言的开发工具
-                        </span>
-                        <div class="developer_middle_bottom_item_sdk_container">
-                            <span class="developer_middle_bottom_item_sdk_item">
-                                Go SDK
-                            </span>
-                            <span class="developer_middle_bottom_item_sdk_item">
-                                Java SDK
-                            </span>
-                            <span class="developer_middle_bottom_item_sdk_item">
-                                JavaScript SDK
-                            </span>
-                        </div>
-                    </div>
-                    <div class="developer_middle_bottom_item">
-                        <img
-                            src="../assets/jichusheshi_icon.png"
-                            class="developer_middle_bottom_item_icon"
-                        />
-                        <span class="developer_middle_bottom_item_title">
-                            完善的基础设施
-                        </span>
-                        <span class="developer_middle_bottom_item_content">
-                            共识引擎, 合约开发工具和开发文档
-                        </span>
-                    </div>
-                    <div class="developer_middle_bottom_item">
-                        <img
-                            src="../assets/developer_icon.png"
-                            class="developer_middle_bottom_item_icon"
-                        />
-                        <span class="developer_middle_bottom_item_title">
-                            强大的开发者社区
-                        </span>
-                        <span class="developer_middle_bottom_item_content">
-                            多成员共同协作参与的开发者社区
-                        </span>
-                    </div>
-                    <div class="developer_middle_bottom_item">
-                        <img
-                            src="../assets/system_icon.png"
-                            class="developer_middle_bottom_item_icon"
-                        />
-                        <span class="developer_middle_bottom_item_title">
-                            繁荣的生态系统
-                        </span>
-                        <span class="developer_middle_bottom_item_content">
-                            蓬勃发展的合作伙伴和项目
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="developer_bottom">
-            <div class="developer_bottom_top">
-                <span class="developer_bottom_top_left"> 开发者工具 </span>
-            </div>
-            <div class="developer_bottom_bottom">
-                <div class="developer_bottom_bottom_left">
-                    <a
-                        class="developer_bottom_bottom_item"
-                        href="https://github.com/bianjieai/irita"
-                        target="_blank"
-                    >
-                        <img
-                            class="developer_bottom_bottom_item_iconfont"
-                            src="../assets/github_icon.png"
-                        />
-                        <span class="developer_bottom_bottom_item_title">
-                            GitHub 开源地址 →
-                        </span>
-                        <i class="developer_bottom_bottom_item_bg"></i>
-                    </a>
-                    <a
-                        class="developer_bottom_bottom_item"
-                        href="https://irita.bianjie.ai/docs/"
-                        target="_blank"
-                    >
-                        <img
-                            class="developer_bottom_bottom_item_iconfont"
-                            src="../assets/doc_icon.png"
-                        />
-                        <span class="developer_bottom_bottom_item_title">
-                            开发者技术文档 →
-                        </span>
-                        <i class="developer_bottom_bottom_item_bg"></i>
-                    </a>
-                    <a class="developer_bottom_bottom_item _last_item">
-                        <img
-                            class="developer_bottom_bottom_item_iconfont"
-                            src="../assets/API_icon.png"
-                        />
-                        <span class="developer_bottom_bottom_item_title">
-                            成熟的链上 API 接口
-                        </span>
-                        <i class="developer_bottom_bottom_item_bg"></i>
-                    </a>
-                </div>
-                <img
-                    src="../assets/developer_bottom_bg.png"
-                    class="developer_bottom_bottom_center"
-                />
-                <div class="developer_bottom_bottom_right">
-                    <a class="developer_bottom_bottom_item">
-                        <img
-                            class="developer_bottom_bottom_item_iconfont"
-                            src="../assets/iservice_icon.png"
-                        />
-                        <span class="developer_bottom_bottom_item_title">
-                            iService 服务套件
-                        </span>
-                        <i class="developer_bottom_bottom_item_bg"></i>
-                    </a>
-                    <a class="developer_bottom_bottom_item">
-                        <img
-                            class="developer_bottom_bottom_item_iconfont"
-                            src="../assets/IDE_icon.png"
-                        />
-                        <span class="developer_bottom_bottom_item_title">
-                            智能合约 IDE
-                        </span>
-                        <i class="developer_bottom_bottom_item_bg"></i>
-                    </a>
-                    <a class="developer_bottom_bottom_item _last_item">
-                        <img
-                            class="developer_bottom_bottom_item_iconfont"
-                            src="../assets/baseservice_icon.png"
-                        />
-                        <span class="developer_bottom_bottom_item_title">
-                            链外基础服务设施
-                        </span>
-                        <i class="developer_bottom_bottom_item_bg"></i>
-                    </a>
                 </div>
             </div>
         </div>
@@ -471,6 +271,7 @@ export default {
                 color: #000000;
                 margin-bottom: 47px;
                 width: 100%;
+                text-align: center;
 
                 @media (max-width: 768px) {
                     margin-bottom: 36px;
