@@ -26,6 +26,7 @@
                         laptop bag
                     </span>
         </div>
+
         <div class="community_bottom_content_container" v-show="activeTab === 0" v-if="$frontmatter">
           <div class="community_bottom_content_item"
                v-for="(item,index) in diaperbagsList">
@@ -45,12 +46,30 @@
           </div>
         </div>
 
+        <div class="community_bottom_content_container" v-show="activeTab === 1" v-if="$frontmatter">
+          <div class="community_bottom_content_item"
+               v-for="(item,index) in laptopbackpacksList">
+            <img ref="laptopbackpack"  :src="item.src" @click="handleRouterClick(item)" class="community_bottom_content_item_img">
+            <div class="community_bottom_content_item_time_container">
+                            <span class="community_bottom_content_item_title">
+                                {{ item.title }}
+                            </span>
+              <div class="community_bottom_content_item_wrap1">
+                <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
+                  <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick1(icon,index)">
+                </div>
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
 
         <div class="community_pagination">
           <el-pagination
               background
               layout="prev, pager, next"
-              :page-size="6"
+              :page-size="9"
               @current-change="handlePageClick"
               :current-page="currentPage"
               :total="total">
@@ -85,21 +104,15 @@ export default {
     diaperbagsList(){
       if(this.$frontmatter && this.$frontmatter.diaperbags && this.$frontmatter.diaperbags.length > 0 && this.activeTab === 0){
         let diaperbags = JSON.parse(JSON.stringify(this.$frontmatter.diaperbags))
-        return diaperbags.splice((this.currentPage - 1) * 6, 6);
+        return diaperbags.splice((this.currentPage - 1) * 9, 9);
       }
     },
-    blogList(){
-      if(this.$frontmatter && this.$frontmatter.diaperbags && this.$frontmatter.diaperbags.length > 0 && this.activeTab === 0){
-        let diaperbags = JSON.parse(JSON.stringify(this.$frontmatter.diaperbags))
-        return diaperbags.splice((this.currentPage - 1) * 6, 6);
+    laptopbackpacksList(){
+      if(this.$frontmatter && this.$frontmatter.laptopbackpacks && this.$frontmatter.laptopbackpacks.length > 0 && this.activeTab === 1){
+        let laptopbackpacks = JSON.parse(JSON.stringify(this.$frontmatter.laptopbackpacks))
+        return laptopbackpacks.splice((this.currentPage - 1) * 9, 9);
       }
     },
-    articleList(){
-      if(this.$frontmatter && this.$frontmatter.articles && this.$frontmatter.articles.length > 0 && this.activeTab === 1){
-        let articles = JSON.parse(JSON.stringify(this.$frontmatter.articles))
-        return articles.splice((this.currentPage - 1) * 6, 6);
-      }
-    }
   },
 
   methods : {
@@ -112,8 +125,8 @@ export default {
     setTotal(){
       if(this.activeTab === 0 && this.$frontmatter.diaperbags.length >= 0){
         this.total = this.$frontmatter.diaperbags.length;
-      }else if(this.activeTab === 1 && this.$frontmatter.articles.length >= 0){
-        this.total = this.$frontmatter.articles.length;
+      }else if(this.activeTab === 1 && this.$frontmatter.laptopbackpacks.length >= 0){
+        this.total = this.$frontmatter.laptopbackpacks.length;
       }
     },
     handleRouterClick(article){
@@ -123,6 +136,9 @@ export default {
     },
     handleIconClick(icon,index){
        this.$refs.diaperbag[index].src=icon
+    },
+    handleIconClick1(icon,index){
+      this.$refs.laptopbackpack[index].src=icon
     },
     handlePageClick(page){
       this.currentPage = page;
