@@ -5,7 +5,7 @@
     homeContent: {
         title: XIBO(C-BOXBAG),
         subTitle: 'the bag manufactuer with nearly 15 years making bags experience, trend setting, eco-friendly, reusable bags',
-    homeLink: []
+        homeLink: []
     },
     newProduct: {
         text: New Products,
@@ -15,23 +15,23 @@
             link: /community,
             routingLevel: 2,
             target: _self,
-blogImgName: bags1,
-blogImgHighlightName: bags2
+            blogImgName: bags1,
+            blogImgHighlightName: bags2
         },
         {
             text: 文章资讯,
             link: /community,
             routingLevel: 2,
             target: _self,
-blogImgName: bags1,
-blogImgHighlightName: bags2
+            blogImgName: bags1,
+            blogImgHighlightName: bags2
         },
         {
             text: GitHub,
             link:  https://github.com/bianjieai/irita,
             target: _blank,
-blogImgName: bags1,
-blogImgHighlightName: bags2
+            blogImgName: bags1,
+            blogImgHighlightName: bags2
         }
     ]
     },
@@ -43,23 +43,23 @@ blogImgHighlightName: bags2
             link: /product/product-001,
             routingLevel: 2,
             target: _self,
-blogImgName: bags1,
-blogImgHighlightName: bags2
+            blogImgName: bags1,
+            blogImgHighlightName: bags2
         },
         {
             text: Bags1,
             link: /community,
             routingLevel: 2,
             target: _self,
-blogImgName: bags1,
-blogImgHighlightName: bags2
+            blogImgName: bags1,
+            blogImgHighlightName: bags2
         },
         {
             text: Bags1,
             link:  https://github.com/bianjieai/irita,
             target: _blank,
-blogImgName: bags1,
-blogImgHighlightName: bags2
+            blogImgName: bags1,
+            blogImgHighlightName: bags2
         }
         ],
         list2: [
@@ -68,23 +68,24 @@ blogImgHighlightName: bags2
             link: /faq/refund-policy,
             routingLevel: 2,
             target: _self,
-blogImgName: bags1,
-blogImgHighlightName: bags2
+            blogImgName: bags1,
+            blogImgHighlightName: bags2
         },
         {
             text: Bags1,
             link: /community,
             routingLevel: 2,
             target: _self,
-blogImgName: bags1,
-blogImgHighlightName: bags2
+            blogImgName: bags1,
+            blogImgHighlightName: bags2
         },
         {
-            text: GitHub,
-            link:  https://github.com/bianjieai/irita,
-            target: _blank,
-blogImgName: bags1,
-blogImgHighlightName: bags2
+        text: Bags1,
+        link: /community,
+        routingLevel: 2,
+        target: _self,
+        blogImgName: bags1,
+        blogImgHighlightName: bags2
         }
         ]
     }

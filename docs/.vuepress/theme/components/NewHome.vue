@@ -967,43 +967,6 @@ export default {
   }
 }
 
-.production_line_img {
-  position: relative;
-  width: 60.7rem;
-  height: 51.6rem;
-  background: url('/irita_image_core.png') no-repeat center / cover;
-
-  .irita_image {
-    position: absolute;
-    height: 15rem;
-
-    &:nth-of-type(1) {
-      top: 12rem;
-      left: 2.5rem;
-    }
-
-    &:nth-of-type(2) {
-      top: 16.3rem;
-      right: 5rem;
-    }
-
-    &:nth-of-type(3) {
-      right: 11.8rem;
-      bottom: 3.2rem;
-    }
-
-    &:nth-of-type(4) {
-      top: 6.5rem;
-      right: 19rem;
-    }
-
-    &:nth-of-type(5) {
-      left: 3.9rem;
-      bottom: 1.9rem;
-    }
-  }
-}
-
 .home_opencommunity_content {
   width: 100%;
   min-height: 55.5rem;

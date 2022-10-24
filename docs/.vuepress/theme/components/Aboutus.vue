@@ -85,7 +85,7 @@ export default {
     .developer_top {
         width: 100%;
         min-height: 36rem;
-        background: url('../assets/devoloper_top_bg.png') no-repeat center / cover;
+        background: url('../assets/blog_bg.png') no-repeat center / cover;
 
         @media (max-width: 768px) {
             min-height: 28rem;
@@ -372,130 +372,6 @@ export default {
                             width: 16px;
                             height: 16px;
                             margin-left: 8px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .developer_middle_bottom {
-        width: 100%;
-        background: url('../assets/devoloper_middle_bottom_bg.png') no-repeat center / cover;
-        display: flex;
-        justify-content: center;
-
-        @media (max-width: 560px) {
-            justify-content: flex-start;
-            padding: 0 4.8rem;
-            box-sizing: border-box;
-        }
-
-        .developer_middle_bottom_wrap {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .developer_title_content {
-                margin: 8rem 0 4.8rem 0;
-                width: 100%;
-
-                .developer_middle_bottom_title {
-                    font-size: 28px;
-                    font-weight: 600;
-                    color: #000000;
-                    line-height: 28px;
-                }
-            }
-
-            @media (max-width: 930px) {
-                .developer_title_content {
-                    margin: 4.8rem 0 2.8rem;
-                }
-            }
-            @media (max-width: 768px) {
-                .developer_title_content {
-                    .developer_middle_bottom_title {
-                        font-size: 24px;
-                    }
-                }
-            }
-
-            .developer_middle_bottom_content {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-column-gap: 1.6rem;
-                grid-row-gap: 1.6rem;
-                padding-bottom: 8rem;
-
-                @media (max-width: 930px) {
-                    grid-template-columns: repeat(1, 1fr);
-                    padding-bottom: 4.8rem;
-                }
-
-                .developer_middle_bottom_item {
-                    height: 224px;
-                    background: #FFFFFF;
-                    border-radius: 4px;
-                    padding: 33px 24px;
-                    box-sizing: border-box;
-                    display: flex;
-                    flex-direction: column;
-
-                    @media (max-width: 560px) {
-                        height: auto;
-                    }
-
-                    .developer_middle_bottom_item_icon {
-                        width: 40px;
-                        height: 40px;
-                        margin-bottom: 16px;
-                    }
-
-                    .developer_middle_bottom_item_title {
-                        font-size: 20px;
-                        font-weight: 600;
-                        color: #000000;
-                        margin-bottom: 16px;
-                    }
-
-                    .developer_middle_bottom_item_content {
-                        font-size: 14px;
-                        font-weight: 400;
-                        color: rgba(0, 0, 0, 0.65);
-                        padding-bottom: 24px;
-                        border-bottom: 1px solid #E8EBF5;
-                    }
-
-                    ._no_border {
-                        border: none;
-                    }
-
-                    .developer_middle_bottom_item_sdk_container {
-                        .developer_middle_bottom_item_sdk_item {
-                            box-sizing: border-box;
-                            line-height: 1.6rem;
-                            margin-bottom: 0.08rem;
-                            display: inline-block;
-                            border-radius: 4px;
-                            border: 1px solid #7065FF;
-                            padding: 8px 18px;
-                            color: #7065FF;
-                            font-size: 14px;
-                            font-weight: 400;
-                            margin-right: 16px;
-                        }
-
-                        @media (max-width: 528px) {
-                            .developer_middle_bottom_item_sdk_item:last-child {
-                                margin-top: 0.8rem;
-                            }
-                        }
-
-                        @media (max-width: 367px) {
-                            .developer_middle_bottom_item_sdk_item:first-child {
-                                margin-bottom: 0.8rem;
-                            }
                         }
                     }
                 }
