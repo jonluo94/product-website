@@ -2,19 +2,180 @@
 {
     layout: Layout,
     isProduct: true,
-    blogs: [
+    diaperbags: [
     {
-        src: /img/bags/newhot/bags1.png,
-        title: 产品11111111111111111111111111,
+        src: /img/bags/diaperbag/MB20022-1.jpg,
+        title: MB20022,
         owner: xito,
         price: $1,
-        icon: /img/bags/icon.png,
         icons: [
-            /img/bags/icon.png,
-            /img/bags/icon.png,
+        /img/bags/diaperbag/MB20022-1.jpg,
+        /img/bags/diaperbag/MB20022-2.jpg,
+        /img/bags/diaperbag/MB20022-3.jpg,
         ],
         router: /product/product-001,
-    }
-    ]
+    },
+    {
+        src: /img/bags/diaperbag/MB21001-1.jpg,
+        title: MB21001,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB21001-1.jpg,
+        /img/bags/diaperbag/MB21001-2.jpg,
+        /img/bags/diaperbag/MB21001-3.jpg,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/diaperbag/MB21002-1.jpg,
+        title: MB21002,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB21002-1.jpg,
+        /img/bags/diaperbag/MB21002-2.jpg,
+        /img/bags/diaperbag/MB21002-3.jpg,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/diaperbag/MB21003-1.jpg,
+        title: MB21003,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB21003-1.jpg,
+        /img/bags/diaperbag/MB21003-2.jpg,
+        /img/bags/diaperbag/MB21003-3.jpg,
+        /img/bags/diaperbag/MB21003-4.jpg,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/diaperbag/MB21005-1.jpg,
+        title: MB21005,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB21005-1.jpg,
+        /img/bags/diaperbag/MB21005-2.jpg,
+        /img/bags/diaperbag/MB21005-3.jpg,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/diaperbag/MB21007-1.jpg,
+        title: MB21007,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB21007-1.jpg,
+        /img/bags/diaperbag/MB21007-2.jpg,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/diaperbag/MB21008-1.jpg,
+        title: MB21008,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB21008-1.jpg,
+        /img/bags/diaperbag/MB21008-2.jpg,
+        /img/bags/diaperbag/MB21008-3.jpg,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/diaperbag/MB21009-1.jpg,
+        title: MB21009,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB21009-1.jpg,
+        /img/bags/diaperbag/MB21009-2.jpg,
+        /img/bags/diaperbag/MB21009-3.jpg,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/diaperbag/MB66001-1.jpg,
+        title: MB66001,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB66001-1.jpg,
+        /img/bags/diaperbag/MB66001-2.jpg,
+        /img/bags/diaperbag/MB66001-3.jpg,
+        /img/bags/diaperbag/MB66001-4.jpg,
+        /img/bags/diaperbag/MB66001-5.jpg,
+        /img/bags/diaperbag/MB66001-6.jpg,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/diaperbag/MB66002-1.jpg,
+        title: MB21009,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB66002-1.jpg,
+        /img/bags/diaperbag/MB66002-2.jpg,
+        /img/bags/diaperbag/MB66002-3.jpg,
+        /img/bags/diaperbag/MB66002-4.jpg,
+        /img/bags/diaperbag/MB66002-5.jpg,
+        /img/bags/diaperbag/MB66002-6.jpg,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/diaperbag/MB66003-4.jpg,
+        title: MB66003,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB66003-4.jpg,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/diaperbag/MB66004-1.jpg,
+        title: MB66004,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB66004-1.jpg,
+        /img/bags/diaperbag/MB66004-2.jpg,
+        /img/bags/diaperbag/MB66004-3.jpg,
+        /img/bags/diaperbag/MB66004-4.jpg,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/diaperbag/MB66005-1.jpg,
+        title: MB66005,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB66005-1.jpg,
+        ],
+        router: /product/product-001,
+    },
+    {
+        src: /img/bags/diaperbag/MB66006-1.jpg,
+        title: MB66006,
+        owner: xito,
+        price: $1,
+        icons: [
+        /img/bags/diaperbag/MB66006-1.jpg,
+        /img/bags/diaperbag/MB66006-2.jpg,
+        /img/bags/diaperbag/MB66006-3.jpg,
+        /img/bags/diaperbag/MB66006-4.jpg,
+        ],
+        router: /product/product-001,
+    },
+    ],
+
 }
 ---

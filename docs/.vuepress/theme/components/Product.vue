@@ -22,190 +22,29 @@
                         laptop backpack
                     </span>
           <span class="community_bottom_tab" @click="handleTabClick(2)"
-                :class="activeTab === 1 ? 'active' : ''">
+                :class="activeTab === 2 ? 'active' : ''">
                         laptop bag
-                    </span>
-          <span class="community_bottom_tab" @click="handleTabClick(3)"
-                :class="activeTab === 1 ? 'active' : ''">
-                        school bag
-                    </span>
-          <span class="community_bottom_tab" @click="handleTabClick(4)"
-                :class="activeTab === 1 ? 'active' : ''">
-                        shoulder bag
-                    </span>
-          <span class="community_bottom_tab" @click="handleTabClick(5)"
-                :class="activeTab === 1 ? 'active' : ''">
-                        sport bag
                     </span>
         </div>
         <div class="community_bottom_content_container" v-show="activeTab === 0" v-if="$frontmatter">
           <div class="community_bottom_content_item"
-               @click="handleArticleClick(item)"
-               v-for="item in blogList">
-            <img :src="$withBase(item.src)" class="community_bottom_content_item_img">
-
+               v-for="(item,index) in diaperbagsList">
+            <img ref="diaperbag"  :src="item.src" @click="handleRouterClick(item)" class="community_bottom_content_item_img">
             <div class="community_bottom_content_item_time_container">
                             <span class="community_bottom_content_item_title">
                                 {{ item.title }}
                             </span>
               <div class="community_bottom_content_item_wrap1">
                 <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
-                  <img :src="$withBase(icon)" class="community_bottom_content_item_icon">
+                  <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick(icon,index)">
                 </div>
-                <span class="community_bottom_content_item_time">
-                                {{ item.price }}
-                            </span>
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
               </div>
 
             </div>
           </div>
-
         </div>
-        <div class="community_bottom_content_container" v-show="activeTab === 1" v-if="$frontmatter">
-          <div class="community_bottom_content_item"
-               @click="handleArticleClick(item)"
-               v-for="item in blogList">
-            <img :src="$withBase(item.src)" class="community_bottom_content_item_img">
 
-            <div class="community_bottom_content_item_time_container">
-                            <span class="community_bottom_content_item_title">
-                                {{ item.title }}
-                            </span>
-              <div class="community_bottom_content_item_wrap1">
-                <div class="community_bottom_content_item_owner_container">
-                  <img :src="$withBase(item.icon)" class="community_bottom_content_item_icon">
-                  <span class="community_bottom_content_item_owner">
-                                    {{ item.owner }}
-                                </span>
-                </div>
-                <span class="community_bottom_content_item_time">
-                                {{ item.time }}
-                            </span>
-              </div>
-
-            </div>
-            <span class="community_bottom_content_item_detail">
-                            文章详情
-                        </span>
-          </div>
-
-        </div>
-        <div class="community_bottom_content_container" v-show="activeTab === 2" v-if="$frontmatter">
-          <div class="community_bottom_content_item"
-               @click="handleArticleClick(item)"
-               v-for="item in blogList">
-            <img :src="$withBase(item.src)" class="community_bottom_content_item_img">
-
-            <div class="community_bottom_content_item_time_container">
-                            <span class="community_bottom_content_item_title">
-                                {{ item.title }}
-                            </span>
-              <div class="community_bottom_content_item_wrap1">
-                <div class="community_bottom_content_item_owner_container">
-                  <img :src="$withBase(item.icon)" class="community_bottom_content_item_icon">
-                  <span class="community_bottom_content_item_owner">
-                                    {{ item.owner }}
-                                </span>
-                </div>
-                <span class="community_bottom_content_item_time">
-                                {{ item.time }}
-                            </span>
-              </div>
-
-            </div>
-            <span class="community_bottom_content_item_detail">
-                            文章详情
-                        </span>
-          </div>
-
-        </div>
-        <div class="community_bottom_content_container" v-show="activeTab === 3" v-if="$frontmatter">
-          <div class="community_bottom_content_item"
-               @click="handleArticleClick(item)"
-               v-for="item in blogList">
-            <img :src="$withBase(item.src)" class="community_bottom_content_item_img">
-
-            <div class="community_bottom_content_item_time_container">
-                            <span class="community_bottom_content_item_title">
-                                {{ item.title }}
-                            </span>
-              <div class="community_bottom_content_item_wrap1">
-                <div class="community_bottom_content_item_owner_container">
-                  <img :src="$withBase(item.icon)" class="community_bottom_content_item_icon">
-                  <span class="community_bottom_content_item_owner">
-                                    {{ item.owner }}
-                                </span>
-                </div>
-                <span class="community_bottom_content_item_time">
-                                {{ item.time }}
-                            </span>
-              </div>
-
-            </div>
-            <span class="community_bottom_content_item_detail">
-                            文章详情
-                        </span>
-          </div>
-
-        </div>
-        <div class="community_bottom_content_container" v-show="activeTab === 4" v-if="$frontmatter">
-          <div class="community_bottom_content_item"
-               @click="handleArticleClick(item)"
-               v-for="item in blogList">
-            <img :src="$withBase(item.src)" class="community_bottom_content_item_img">
-
-            <div class="community_bottom_content_item_time_container">
-                            <span class="community_bottom_content_item_title">
-                                {{ item.title }}
-                            </span>
-              <div class="community_bottom_content_item_wrap1">
-                <div class="community_bottom_content_item_owner_container">
-                  <img :src="$withBase(item.icon)" class="community_bottom_content_item_icon">
-                  <span class="community_bottom_content_item_owner">
-                                    {{ item.owner }}
-                                </span>
-                </div>
-                <span class="community_bottom_content_item_time">
-                                {{ item.time }}
-                            </span>
-              </div>
-
-            </div>
-            <span class="community_bottom_content_item_detail">
-                            文章详情
-                        </span>
-          </div>
-
-        </div>
-        <div class="community_bottom_content_container" v-show="activeTab === 5" v-if="$frontmatter">
-          <div class="community_bottom_content_item"
-               @click="handleArticleClick(item)"
-               v-for="item in blogList">
-            <img :src="$withBase(item.src)" class="community_bottom_content_item_img">
-
-            <div class="community_bottom_content_item_time_container">
-                            <span class="community_bottom_content_item_title">
-                                {{ item.title }}
-                            </span>
-              <div class="community_bottom_content_item_wrap1">
-                <div class="community_bottom_content_item_owner_container">
-                  <img :src="$withBase(item.icon)" class="community_bottom_content_item_icon">
-                  <span class="community_bottom_content_item_owner">
-                                    {{ item.owner }}
-                                </span>
-                </div>
-                <span class="community_bottom_content_item_time">
-                                {{ item.time }}
-                            </span>
-              </div>
-
-            </div>
-            <span class="community_bottom_content_item_detail">
-                            文章详情
-                        </span>
-          </div>
-
-        </div>
 
         <div class="community_pagination">
           <el-pagination
@@ -243,19 +82,23 @@ export default {
     activeTab(){
       return +this.$store.state.activeTab;
     },
-    blogList(){
-      if(this.$frontmatter && this.$frontmatter.blogs && this.$frontmatter.blogs.length > 0 && this.activeTab === 0){
-        let blogs = JSON.parse(JSON.stringify(this.$frontmatter.blogs))
-        return blogs.splice((this.currentPage - 1) * 6, 6);
+    diaperbagsList(){
+      if(this.$frontmatter && this.$frontmatter.diaperbags && this.$frontmatter.diaperbags.length > 0 && this.activeTab === 0){
+        let diaperbags = JSON.parse(JSON.stringify(this.$frontmatter.diaperbags))
+        return diaperbags.splice((this.currentPage - 1) * 6, 6);
       }
-
+    },
+    blogList(){
+      if(this.$frontmatter && this.$frontmatter.diaperbags && this.$frontmatter.diaperbags.length > 0 && this.activeTab === 0){
+        let diaperbags = JSON.parse(JSON.stringify(this.$frontmatter.diaperbags))
+        return diaperbags.splice((this.currentPage - 1) * 6, 6);
+      }
     },
     articleList(){
       if(this.$frontmatter && this.$frontmatter.articles && this.$frontmatter.articles.length > 0 && this.activeTab === 1){
         let articles = JSON.parse(JSON.stringify(this.$frontmatter.articles))
         return articles.splice((this.currentPage - 1) * 6, 6);
       }
-
     }
   },
 
@@ -267,20 +110,23 @@ export default {
       }
     },
     setTotal(){
-      if(this.activeTab === 0 && this.$frontmatter.blogs.length >= 0){
-        this.total = this.$frontmatter.blogs.length;
+      if(this.activeTab === 0 && this.$frontmatter.diaperbags.length >= 0){
+        this.total = this.$frontmatter.diaperbags.length;
       }else if(this.activeTab === 1 && this.$frontmatter.articles.length >= 0){
         this.total = this.$frontmatter.articles.length;
       }
     },
-    handleArticleClick(article){
+    handleRouterClick(article){
       this.$router.push({
         path: article.router
       })
     },
+    handleIconClick(icon,index){
+       this.$refs.diaperbag[index].src=icon
+    },
     handlePageClick(page){
       this.currentPage = page;
-    }
+    },
   },
   mounted(){
     this.setTotal();
@@ -446,7 +292,7 @@ export default {
 
           .community_bottom_content_item_img {
             width: 100%;
-            height: 200px;
+            height: 280px;
             flex: 0 0 200px;
           }
 

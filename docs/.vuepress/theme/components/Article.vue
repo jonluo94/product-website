@@ -274,12 +274,6 @@ export default {
             }
           }
 
-          .community_bottom_content_item_img {
-            width: 100%;
-            height: 200px;
-            flex: 0 0 200px;
-          }
-
           .community_bottom_content_item_time_container {
             flex: 1;
             display: flex;
