@@ -104,6 +104,10 @@
                           :class="activeTab2 === 0 ? 'active' : ''">
                         school bag
                     </span>
+          <span class="community_bottom_tab" @click="handleTabClick2(1)"
+                :class="activeTab2 === 1 ? 'active' : ''">
+                        shoulder bag
+                    </span>
         </div>
 
         <div class="community_bottom_content_container" v-show="activeTab2 === 0" v-if="$frontmatter">
@@ -125,6 +129,24 @@
           </div>
         </div>
 
+        <div class="community_bottom_content_container" v-show="activeTab2 === 1" v-if="$frontmatter">
+          <div class="community_bottom_content_item"
+               v-for="(item,index) in shoulderbagsList">
+            <img ref="shoulderbag"  :src="item.src" @click="handleRouterClick(item)" class="community_bottom_content_item_img">
+            <div class="community_bottom_content_item_time_container">
+                            <span class="community_bottom_content_item_title">
+                                {{ item.title }}
+                            </span>
+              <div class="community_bottom_content_item_wrap1">
+                <div class="community_bottom_content_item_owner_container" v-for="icon in item.icons">
+                  <img :src="$withBase(icon)" class="community_bottom_content_item_icon"  @click="handleIconClick4(icon,index)">
+                </div>
+                <span class="community_bottom_content_item_time">{{ item.price }}</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
 
         <div class="community_pagination">
           <el-pagination
@@ -195,6 +217,12 @@ export default {
         return schoolbags.splice((this.currentPage2 - 1) * 6, 6);
       }
     },
+    shoulderbagsList(){
+      if(this.$frontmatter && this.$frontmatter.shoulderbags && this.$frontmatter.shoulderbags.length > 0 && this.activeTab2 === 1){
+        let shoulderbags = JSON.parse(JSON.stringify(this.$frontmatter.shoulderbags))
+        return shoulderbags.splice((this.currentPage2 - 1) * 6, 6);
+      }
+    },
   },
 
   methods : {
@@ -220,8 +248,8 @@ export default {
       }
       if(this.activeTab2 === 0 && this.$frontmatter.schoolbags.length >= 0){
         this.total2 = this.$frontmatter.schoolbags.length;
-      }else if(this.activeTab2 === 1 && this.$frontmatter.laptopbackpacks.length >= 0){
-        this.total2 = this.$frontmatter.laptopbackpacks.length;
+      }else if(this.activeTab2 === 1 && this.$frontmatter.shoulderbags.length >= 0){
+        this.total2 = this.$frontmatter.shoulderbags.length;
       } else if(this.activeTab2 === 2 && this.$frontmatter.laptopbags.length >= 0){
         this.total2 = this.$frontmatter.laptopbags.length;
       }
@@ -244,7 +272,7 @@ export default {
       this.$refs.schoolbag[index].src=icon
     },
     handleIconClick4(icon,index){
-      this.$refs.laptopbackpack[index].src=icon
+      this.$refs.shoulderbag[index].src=icon
     },
     handleIconClick5(icon,index){
       this.$refs.laptopbag[index].src=icon
