@@ -75,7 +75,7 @@
           <div class="advantage_content">
             <div class="more">
               <a class="more_content"
-                 href="/product"
+                 href="/product.html"
                  target="_self"
                  rel="noopener noreferrer">
                 <span class="more_text">More</span>
