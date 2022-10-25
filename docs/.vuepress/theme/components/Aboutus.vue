@@ -327,7 +327,7 @@ export default {
                         }
 
                         .developer_middle_top_right_top_item {
-                            width: 216px;
+                            width: 283px;
                             margin-bottom: 60px;
                             display: flex;
                             flex-direction: column;
@@ -343,7 +343,7 @@ export default {
                             }
 
                             .developer_middle_top_right_top_content {
-                                max-width: 216px;
+                                max-width: 283px;
                                 font-size: 14px;
                                 font-weight: 400;
                                 color: rgba(0, 0, 0, 0.65);
