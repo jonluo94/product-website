@@ -80,12 +80,12 @@
             blogImgHighlightName: bags2
         },
         {
-        text: Bags1,
-        link: /community,
-        routingLevel: 2,
-        target: _self,
-        blogImgName: bags1,
-        blogImgHighlightName: bags2
+            text: Bags1,
+            link: /community,
+            routingLevel: 2,
+            target: _self,
+            blogImgName: bags1,
+            blogImgHighlightName: bags2
         }
         ]
     }

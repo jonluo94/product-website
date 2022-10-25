@@ -13,7 +13,7 @@
         <div class="developer_middle_top">
             <div class="developer_middle_top_wrap">
                 <span class="developer_middle_top_top">
-                    Company Profile
+                    xibo bags co. ( c-boxbag co.)
                 </span>
                 <div class="developer_middle_top_bottom">
                     <div class="developer_middle_top_right">
