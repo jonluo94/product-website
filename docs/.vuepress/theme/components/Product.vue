@@ -207,11 +207,6 @@ export default {
       total2:0,
       currentPage2: 1,
       carousels:[
-          // "/img/carousel/1.jpg",
-          // "/img/carousel/2.jpg",
-          // "/img/carousel/3.jpg",
-          // "/img/carousel/4.jpg",
-          // "/img/carousel/5.jpg",
         "/img/carousel/1.jpeg",
         "/img/carousel/2.jpeg",
         "/img/carousel/3.jpeg",

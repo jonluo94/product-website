@@ -1024,7 +1024,7 @@ export default {
 
       @media (max-width: 600px) {
         flex-direction: column;
-        max-width: 24rem;
+        max-width: 30rem;
       }
 
       @media (max-width: 375px) {
@@ -1046,7 +1046,7 @@ export default {
 
         @media (max-width: 600px) {
           margin-right: 0;
-          max-width: 21.6rem;
+          max-width: 30rem;
         }
 
         @media (max-width: 375px) {
