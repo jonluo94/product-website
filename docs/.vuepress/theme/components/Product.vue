@@ -1,14 +1,11 @@
 <template>
   <div class="community_container">
-    <div class="community_top">
-      <div class="community_top_wrap">
-        <div class="community_top_left">
-          <i class="community_top_left_border"></i>
-          <span class="community_top_left_sub_title">
-                        Bags Products
-                    </span>
-        </div>
-      </div>
+    <div class="community_top_p">
+      <el-carousel class="community_top_wrap_p" :interval="2000" direction="vertical" :autoplay="true">
+        <el-carousel-item v-for="item in carousels" :key="item">
+          <img style="height: 100%; width: 100%;" :src="$withBase(item)">
+        </el-carousel-item>
+      </el-carousel>
     </div>
     <div class="community_bottom">
       <div class="community_bottom_wrap">
@@ -209,6 +206,18 @@ export default {
       currentPage: 1,
       total2:0,
       currentPage2: 1,
+      carousels:[
+          // "/img/carousel/1.jpg",
+          // "/img/carousel/2.jpg",
+          // "/img/carousel/3.jpg",
+          // "/img/carousel/4.jpg",
+          // "/img/carousel/5.jpg",
+        "/img/carousel/1.jpeg",
+        "/img/carousel/2.jpeg",
+        "/img/carousel/3.jpeg",
+        "/img/carousel/4.jpeg",
+        "/img/carousel/5.jpeg",
+      ],
     }
   },
   watch:{
@@ -334,6 +343,27 @@ export default {
 <style lang="stylus">
 @import url('../../public/iconfont/iconfont.css');
 @import '../styles/adaptation.styl';
+
+.el-carousel__container {
+  height: 300px;
+}
+
+.el-carousel__item h3 {
+  color: #475669;
+  font-size: 18px;
+  opacity: 0.75;
+  line-height: 300px;
+  margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+  background-color: #d3dce6;
+}
+
 .community_container {
   width: 100%;
   display: flex;
@@ -344,10 +374,10 @@ export default {
     line-height:1;
   }
 
-  .community_top {
+  .community_top_p {
     width: 100%;
     height: 36rem;
-    background url('../assets/blog_bg.png') no-repeat center / cover;
+    //background url('../assets/blog_bg.png') no-repeat center / cover;
     // display: flex;
     // justify-content center;
     @media (max-width 768px){
@@ -359,13 +389,12 @@ export default {
       height: 27.2rem;
     }
 
-    .community_top_wrap {
+    .community_top_wrap_p {
       box-sizing: border-box;
-      padding: 10.7rem 0 17.3rem 8.1rem;
       margin: 0 auto;
-      max-width: $contentWidth;
+      max-width: 90rem;
       @media (max-width: 768px){
-        padding 8rem 2.4rem 12rem 4.8rem
+        //padding 8rem 2.4rem 12rem 4.8rem
       }
       .community_top_left {
         display: flex;
@@ -706,10 +735,10 @@ export default {
 
   //pc
   @media screen and (min-width: $minPcWidth) {
-    .community_top {
+    .community_top_p {
       height: 360px;
       flex:0 0 360px;
-      .community_top_wrap {
+      .community_top_wrap_p {
         .community_top_left {
           // margin-right: 132px;
         }
