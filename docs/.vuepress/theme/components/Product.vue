@@ -1,7 +1,7 @@
 <template>
   <div class="community_container">
     <div class="community_top_p">
-      <el-carousel class="community_top_wrap_p" :interval="2000" direction="vertical" :autoplay="true">
+      <el-carousel class="community_top_wrap_p" :interval="3000" direction="vertical" :autoplay="true">
         <el-carousel-item v-for="item in carousels" :key="item">
           <img style="height: 100%; width: 100%;" :src="$withBase(item)">
         </el-carousel-item>
@@ -341,6 +341,9 @@ export default {
 
 .el-carousel__container {
   height: 360px;
+  @media (max-width 768px){
+    height: 28rem;
+  }
 }
 
 .el-carousel__item h3 {
@@ -376,7 +379,7 @@ export default {
     // display: flex;
     // justify-content center;
     @media (max-width 768px){
-      height: 34rem;
+      height: 28rem;
       background url('../assets/blog_bg_768.png') no-repeat center center;
       background-size cover
     }
