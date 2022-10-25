@@ -340,7 +340,7 @@ export default {
 @import '../styles/adaptation.styl';
 
 .el-carousel__container {
-  height: 300px;
+  height: 360px;
 }
 
 .el-carousel__item h3 {
@@ -376,7 +376,7 @@ export default {
     // display: flex;
     // justify-content center;
     @media (max-width 768px){
-      height: 28rem;
+      height: 34rem;
       background url('../assets/blog_bg_768.png') no-repeat center center;
       background-size cover
     }
