@@ -11,28 +11,29 @@
         text: New Products,
         list: [
         {
-            text: 技术博客,
-            link: /community,
-            routingLevel: 2,
-            target: _self,
-            blogImgName: bags1,
-            blogImgHighlightName: bags2
+        text: Bags1,
+        link: /product/product-001,
+        routingLevel: 2,
+        target: _self,
+        blogImgName: bags1,
+        blogImgHighlightName: bags2
         },
         {
-            text: 文章资讯,
-            link: /community,
-            routingLevel: 2,
-            target: _self,
-            blogImgName: bags1,
-            blogImgHighlightName: bags2
+        text: Bags1,
+        link: /product/product-001,
+        routingLevel: 2,
+        target: _self,
+        blogImgName: bags1,
+        blogImgHighlightName: bags2
         },
         {
-            text: GitHub,
-            link:  https://github.com/bianjieai/irita,
-            target: _blank,
-            blogImgName: bags1,
-            blogImgHighlightName: bags2
-        }
+        text: Bags1,
+        link: /product/product-001,
+        routingLevel: 2,
+        target: _self,
+        blogImgName: bags1,
+        blogImgHighlightName: bags2
+        },
     ]
     },
     hotProduct: {
