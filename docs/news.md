@@ -4,11 +4,11 @@
     isArticle: true,
     articles:[
     {
-        month: Mar,
-        date: 06,
+        month: Oct,
+        date: 25,
         year: 2022,
-        title: New1 ,
-        content: news-001,
+        title: Officially Launch ,
+        content: officially launch event,
         router: /news/news-001,
     },
     ]
