@@ -8,85 +8,86 @@
         homeLink: []
     },
     newProduct: {
-        text: New Products,
+        text: Latest Products,
         list: [
         {
-        text: Bags1,
-        link: /product/product-001,
-        routingLevel: 2,
-        target: _self,
-        blogImgName: bags1,
-        blogImgHighlightName: bags2
+            text: SB2220,
+            link: /product/product-001,
+            routingLevel: 2,
+            target: _self,
+            blogImgName: SB2220-1.jpg,
+            blogImgHighlightName: SB2220-2.jpg
         },
         {
-        text: Bags1,
-        link: /product/product-001,
-        routingLevel: 2,
-        target: _self,
-        blogImgName: bags1,
-        blogImgHighlightName: bags2
+            text: MB66006 ,
+            link: /product/product-001,
+            routingLevel: 2,
+            target: _self,
+            blogImgName: MB66006-1.jpg,
+            blogImgHighlightName: MB66006-2.jpg
         },
         {
-        text: Bags1,
-        link: /product/product-001,
-        routingLevel: 2,
-        target: _self,
-        blogImgName: bags1,
-        blogImgHighlightName: bags2
+            text: NB22360,
+            link: /product/product-001,
+            routingLevel: 2,
+            target: _self,
+            blogImgName: NB22360-1.jpg,
+            blogImgHighlightName: NB22360-2.jpg
         },
     ]
     },
     hotProduct: {
-        text: Hot Products,
+        text: Popular Products,
         list: [
         {
-            text: Bags1,
+            text: MB21005,
             link: /product/product-001,
             routingLevel: 2,
             target: _self,
-            blogImgName: bags1,
-            blogImgHighlightName: bags2
+            blogImgName: MB21005-1.jpg,
+            blogImgHighlightName: MB21005-2.jpg
         },
-        {
-            text: Bags1,
-            link: /community,
+        {   
+            text: SB1152,
+            link: /product/product-001,
             routingLevel: 2,
             target: _self,
-            blogImgName: bags1,
-            blogImgHighlightName: bags2
+            blogImgName: SB1152-1.png,
+            blogImgHighlightName: SB1152-2.png
         },
-        {
-            text: Bags1,
-            link:  https://github.com/bianjieai/irita,
-            target: _blank,
-            blogImgName: bags1,
-            blogImgHighlightName: bags2
-        }
+        {   
+            text: BSC2016,
+            link: /product/product-001,
+            routingLevel: 2,
+            target: _self,
+            blogImgName: BSC2016-1.png,
+            blogImgHighlightName: BSC2016-2.png
+        },
         ],
         list2: [
         {
-            text: Bags1,
-            link: /faq/refund-policy,
+            text: SB1137,
+            link: /product/product-001,
             routingLevel: 2,
             target: _self,
-            blogImgName: bags1,
-            blogImgHighlightName: bags2
+            blogImgName: SB1137-1.png,
+            blogImgHighlightName: SB1137-2.png
         },
         {
-            text: Bags1,
-            link: /community,
+            text: QB2277,
+            link: /product/product-001,
             routingLevel: 2,
             target: _self,
-            blogImgName: bags1,
-            blogImgHighlightName: bags2
+            blogImgName: QB2277-1.jpg,
+            blogImgHighlightName: QB2277-2.jpg
         },
         {
-            text: Bags1,
-            link: /community,
+            text: SP22316,
+            link: /product/product-001,
             routingLevel: 2,
             target: _self,
-            blogImgName: bags1,
-            blogImgHighlightName: bags2
+            blogImgName: SP22316.png,
+            blogImgHighlightName: SP22316.png
         }
         ]
     }

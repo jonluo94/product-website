@@ -104,11 +104,6 @@ export default {
       return this.$frontmatter.homeContent;
     },
     // 循环显示不同图片
-    differentLineImg() {
-      return function (imgName) {
-        return `/img/bags/${imgName}.png`;
-      };
-    },
     newProduct() {
       return this.$frontmatter.newProduct;
     },
@@ -117,7 +112,7 @@ export default {
     },
     differentOpenImg() {
       return function (imgName) {
-        return `background:url(/img/bags/anewhot/${imgName}.png) no-repeat center / cover; transition: all .2s linear;`;
+        return `background:url(/img/bags/anewhot/${imgName}) no-repeat center / cover; transition: all .2s linear;`;
       };
     },
   },
@@ -974,7 +969,7 @@ export default {
   .opencommunity_content {
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 8rem 6.3rem 10rem 6.1rem;
+    padding: 8rem 6.3rem 5rem 6.1rem;
     max-width: $contentWidth;
     min-height: 55.5rem;
 
@@ -1035,9 +1030,9 @@ export default {
       .open_item {
         box-sizing: border-box;
         margin-bottom: 1.6rem;
-        padding: 0.8rem;
+        padding: 0.2rem;
         flex: 1;
-        margin-right: 5%;
+        margin-right: 2%;
         height: 32rem;
 
         @media (max-width: 900px) {
@@ -1081,7 +1076,7 @@ export default {
             line-height: 1.6rem;
             font-size: $fontSize16;
             font-weight: $fontWeight600;
-            color: #FFFFFF;
+            color: #7065ff;
           }
 
           .more {

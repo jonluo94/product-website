@@ -107,7 +107,7 @@
     },
     {
         src: /img/bags/diaperbag/MB66002-1.jpg,
-        title: MB21009,
+        title: MB66002,
         price: $XXX,
         icons: [
         /img/bags/diaperbag/MB66002-1.jpg,
@@ -1012,24 +1012,6 @@
         router: /product/product-001,
     },
     {
-        src: /img/bags/schoolbag/SB2202-1.png,
-        title: SB2202,
-        price: $XXX,
-        icons: [
-        /img/bags/schoolbag/SB2202-1.png,
-        ],
-        router: /product/product-001,
-    },
-    {
-        src: /img/bags/schoolbag/SB2202-1.png,
-        title: SB2202,
-        price: $XXX,
-        icons: [
-        /img/bags/schoolbag/SB2202-1.png,
-        ],
-        router: /product/product-001,
-    },
-    {
         src: /img/bags/schoolbag/SB2203-1.jpg,
         title: SB2203,
         price: $XXX,
@@ -1071,16 +1053,6 @@
         router: /product/product-001,
     },
     {
-        src: /img/bags/schoolbag/SB2206-1.jpg,
-        title: SB2206,
-        price: $XXX,
-        icons: [
-        /img/bags/schoolbag/SB2206-1.jpg,
-        /img/bags/schoolbag/SB2206-2.jpg,
-        ],
-        router: /product/product-001,
-    },
-    {
         src: /img/bags/schoolbag/SB2207-1.jpg,
         title: SB2207,
         price: $XXX,
@@ -1088,15 +1060,6 @@
         /img/bags/schoolbag/SB2207-1.jpg,
         /img/bags/schoolbag/SB2207-2.jpg,
         /img/bags/schoolbag/SB2207-3.jpg,
-        ],
-        router: /product/product-001,
-    },
-    {
-        src: /img/bags/schoolbag/SB2208-1.jpg,
-        title: SB2208,
-        price: $XXX,
-        icons: [
-        /img/bags/schoolbag/SB2208-1.jpg,
         ],
         router: /product/product-001,
     },

@@ -12,7 +12,7 @@
         router: /faq/refund-policy,
     },
     {
-        title: Terms Of Service ,
+        title: Terms of Service ,
         router: /faq/terms-of-service,
     }
     ]
