@@ -6,7 +6,7 @@
                     <div class="content_left">
                         <div class="left_img">
                             <img
-                                src="/irita_logo_white.png"
+                                src="/logo_white.png"
                                 alt=""
                                 class="img"
                             />

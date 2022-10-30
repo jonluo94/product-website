@@ -3,7 +3,7 @@
         <div class="navigation_content">
             <div class="navigation_content_left">
                 <div class="navigation_img_content" @click="toHome()">
-                    <img class="logo" src="/irita_logo.png" alt="" />
+                    <img class="logo" src="/logo.png" alt="" />
                 </div>
             </div>
             <ul class="navigation_content_right">
@@ -40,7 +40,7 @@
         <div class="mobile_navigation_container">
             <div class="mobile_navigation_content">
                 <div class="mobile_navigation_logo" @click="toHome">
-                    <img class="irita_logo" src="/irita_logo.png" alt="" />
+                    <img class="irita_logo" src="/logo.png" alt="" />
                 </div>
                 <div class="mobile_menu_icon" @click="isShowMobileMenu">
                     <span class="iconfont icon-menu"></span>
@@ -298,7 +298,7 @@ export default {
             margin: 0;
             width: 100%;
             background: $whiteColor;
-            
+
 
             .mobile_navigation_list_item {
                 position: relative;
