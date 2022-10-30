@@ -375,7 +375,7 @@ export default {
   .community_top_p {
     width: 100%;
     height: 36rem;
-    background url('../assets/blog_bg2.png') no-repeat center / cover;
+    background url('../assets/product_bg.png') no-repeat center / cover;
     // display: flex;
     // justify-content center;
     @media (max-width 768px){

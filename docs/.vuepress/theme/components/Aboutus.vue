@@ -85,7 +85,7 @@ export default {
     .developer_top {
         width: 100%;
         min-height: 36rem;
-        background: url('../assets/blog_bg.png') no-repeat center / cover;
+        background: url('../assets/aboutus_bg.png') no-repeat center / cover;
 
         @media (max-width: 768px) {
             min-height: 28rem;

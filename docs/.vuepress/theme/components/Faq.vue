@@ -104,7 +104,7 @@ export default {
   .community_top {
     width: 100%;
     height: 36rem;
-    background url('../assets/blog_bg.png') no-repeat center / cover;
+    background url('../assets/faq_bg.png') no-repeat center / cover;
     // display: flex;
     // justify-content center;
     @media (max-width 768px){

@@ -1,6 +1,6 @@
 <template>
   <div class="community_container">
-    <div class="community_top">
+    <div class="community_top_news">
       <div class="community_top_wrap">
         <div class="community_top_left">
           <i class="community_top_left_border"></i>
@@ -131,10 +131,10 @@ export default {
     line-height:1;
   }
 
-  .community_top {
+  .community_top_news {
     width: 100%;
     height: 36rem;
-    background url('../assets/blog_bg.png') no-repeat center / cover;
+    background url('../assets/news_bg.png') no-repeat center / cover;
     // display: flex;
     // justify-content center;
     @media (max-width 768px){
